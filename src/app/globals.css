@@ -26,3 +26,29 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #5c636e;
 }
+
+/* body {
+  background-image: url("/blur3.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+} */
+
+.btn-hover {
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #f1a340, #c76988, #6d76a3);
+}

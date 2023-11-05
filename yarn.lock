@@ -1960,6 +1960,11 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-parallax-tilt@^1.7.172:
+  version "1.7.172"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.7.172.tgz#395425634a5847abc3cb11cad1c3411d34126cf7"
+  integrity sha512-3zDtSxyCv0+xGtCc6NyPIXz3uMMhoFgzfm//eU8dzn55tA3YrdHAJanEEVMiGjID2TYudTXmpcMge2cqSwjGlA==
+
 react-simple-typewriter@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-5.0.1.tgz#cfdb896c868a55ed4d5f1f06d62b3a9d0f5ad9d7"

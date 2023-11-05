@@ -6,7 +6,7 @@ type Props = {};
 
 const TextRunner = (props: Props) => {
   const [text, count] = useTypewriter({
-    words: ["coming soon"],
+    words: ["coming soon", "stay tuned"],
     loop: true,
     delaySpeed: 3000,
     deleteSpeed: 50,
@@ -14,7 +14,7 @@ const TextRunner = (props: Props) => {
   return (
     <div>
       <span>{text}</span>
-      <Cursor cursorStyle="." cursorBlinking={true} />
+      <Cursor cursorStyle="." cursorColor="#C76988" cursorBlinking={true} />
     </div>
   );
 };
