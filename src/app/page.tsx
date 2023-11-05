@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import RegisterButton from "@/components/RegisterButton";
 import TextRunner from "@/components/TextRunner";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 import Date from "@/components/Date";
 import About from "@/components/About";
@@ -28,6 +29,8 @@ export default function Home() {
           alt=""
         /> */}
       </div>
+
+      <ScrollToTopButton />
 
       {/* <div className="lg:px-20 md:px-10">
         <Date />

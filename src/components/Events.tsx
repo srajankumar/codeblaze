@@ -18,7 +18,49 @@ const Events = () => {
       register: "https://www.sosc.org.in/",
     },
     {
+      title: "E-Games",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
+      imageSrc: "/og.png",
+      register: "https://www.sosc.org.in/",
+    },
+    {
       title: "Open Source Fiesta",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
+      imageSrc: "/og.png",
+      register: "https://www.sosc.org.in/",
+    },
+    {
+      title: "DeCode",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
+      imageSrc: "/og.png",
+      register: "https://www.sosc.org.in/",
+    },
+    {
+      title: "Techmaze",
+      description:
+        "Are you ready for the ultimate tech-infused escape room challenge? Test your problem-solving and teamwork skills in our immersive Escape Room Tech Challenge! Dive into a high-tech adventure and race against the clock to escape and win amazing prizes.",
+      imageSrc: "/og.png",
+      register: "https://www.sosc.org.in/",
+    },
+    {
+      title: "The Wolf of Dalal Street",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
+      imageSrc: "/og.png",
+      register: "https://www.sosc.org.in/",
+    },
+    {
+      title: "Blind Bytes",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
+      imageSrc: "/og.png",
+      register: "https://www.sosc.org.in/",
+    },
+    {
+      title: "The Pitchers",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
       imageSrc: "/og.png",

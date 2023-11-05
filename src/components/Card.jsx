@@ -12,7 +12,7 @@ const Card = ({ title, description, imageSrc, register }) => {
   };
 
   const handleMouseLeave = (e) => {
-    e.currentTarget.style.background = "#00000030";
+    e.currentTarget.style.background = "#d1f2f900";
   };
 
   return (

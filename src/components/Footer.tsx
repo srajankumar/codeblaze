@@ -18,35 +18,35 @@ const Footer = () => {
             <div className="lg:w-1/2 md:w-1/2 w-full px-4">
               <div className="flex text-white flex-col">
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={githubLink}
                   target="_blank"
                 >
                   GitHub
                 </Link>
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={linkedinLink}
                   target="_blank"
                 >
                   LinkedIn
                 </Link>
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={instagramLink}
                   target="_blank"
                 >
                   Instagram
                 </Link>
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={facebookLink}
                   target="_blank"
                 >
                   Facebook
                 </Link>
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={twitterLink}
                   target="_blank"
                 >
@@ -57,21 +57,21 @@ const Footer = () => {
             <div className="lg:w-1/2 md:w-1/2 w-full px-4">
               <div className="flex text-white flex-col">
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={youtubeLink}
                   target="_blank"
                 >
                   Youtube
                 </Link>
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={discordLink}
                   target="_blank"
                 >
                   Discord
                 </Link>
                 <Link
-                  className="pt-3 md:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
                   href={communityGuidelines}
                   target="_blank"
                 >
@@ -134,7 +134,7 @@ const Footer = () => {
               575007 IN
             </p>
             <Link
-              className="pt-3 text-[#6D76A3] md:underline underline-offset-4 w-fit hover:underline-offset-8"
+              className="pt-3 text-[#6D76A3] hover:underline underline-offset-4 w-fit hover:underline-offset-8"
               href="mailto:sosc@sahyadri.edu.in"
               target="_blank"
             >
