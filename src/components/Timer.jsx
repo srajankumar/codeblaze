@@ -38,7 +38,7 @@ const Timer = ({ targetTime, onTimeout }) => {
 
   return (
     <div>
-      <div className="text-violet-400">{formatTime(timeRemaining)}</div>
+      <div className="text-[#6D76A3]">{formatTime(timeRemaining)}</div>
     </div>
   );
 };
