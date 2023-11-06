@@ -63,7 +63,7 @@ class ScrollToTopButton extends Component {
       <div className="fixed sm:bottom-10 sm:right-10 bottom-6 right-5 z-50">
         {this.state.isButtonVisible && (
           <button
-            className="text-[#6D76A3] hover:text-[#6D76A3] backdrop-blur-md rounded-full border-2 border-transparent hover:border-[#6D76A3] transition duration-200 bg-[#d1f2f9] bg-opacity-5 w-14 h-14 flex justify-center items-center"
+            className="text-[#6D76A3] backdrop-blur-md rounded-full border-2 border-transparent hover:border-[#6D76A3] transition duration-200 bg-[#d1f2f9] bg-opacity-5 w-14 h-14 flex justify-center items-center"
             onClick={this.scrollToTop}
             title="Go to top"
           >

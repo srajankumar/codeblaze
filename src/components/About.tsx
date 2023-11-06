@@ -3,10 +3,10 @@ import TypingAnimation from "@/components/TextAnimation/TextType";
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center py-10 px-2 md:px-0">
-      <h1 className="px-4 text-3xl md:text-4xl font-bold py-5">
+      <h1 className="px-4 text-3xl md:text-4xl font-poppinsB py-5">
         <TypingAnimation message="About" />
       </h1>
-      <div className="px-4 space-y-5 text-lg">
+      <div className="px-4 font-poppinsR space-y-5 text-lg">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio optio,
           omnis neque quos reiciendis tenetur tempore quo? Aliquid at vel porro

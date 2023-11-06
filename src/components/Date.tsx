@@ -13,10 +13,10 @@ const RegistrationButton = () => {
   return (
     <div className="">
       <div className="flex flex-col justify-center items-center h-full">
-        <h1 className="font-bold text-center text-2xl md:text-3xl lg:text-4xl">
+        <h1 className="font-poppinsB tracking-wider text-center text-2xl md:text-3xl lg:text-4xl">
           8th and 9th December
         </h1>
-        <div className="md:pt-5 pt-2 font-bold tracking-widest text-center text-2xl md:text-3xl">
+        <div className="md:pt-5 pt-2 font-poppinsSB tracking-widest text-center text-2xl md:text-3xl">
           {!hackathonRevealed ? (
             <Timer targetTime={revealTime} onTimeout={handleTimeout} />
           ) : (

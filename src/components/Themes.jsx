@@ -7,7 +7,7 @@ import TypingAnimation from "@/components/TextAnimation/TextType";
 export default function Themes() {
   return (
     <div className="py-10 px-2 md:px-0">
-      <h1 className="px-4 text-3xl md:text-4xl font-bold py-10">
+      <h1 className="px-4 text-3xl md:text-4xl font-poppinsB py-10">
         <TypingAnimation message="Themes" />
       </h1>
       <div className="px-4 grid md:grid-cols-2 gap-10">
@@ -32,7 +32,7 @@ function Card({ theme, img }) {
         className="object-cover w-full h-full transition-all duration-500 ease-in-out transform group-hover:scale-110"
       />
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center">
-        <h1 className="text-center px-5 text-2xl lg:text-3xl font-bold text-white">
+        <h1 className="text-center px-5 text-2xl lg:text-3xl font-poppinsSB text-white">
           {theme}
         </h1>
       </div>

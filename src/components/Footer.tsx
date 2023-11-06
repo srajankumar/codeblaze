@@ -12,41 +12,41 @@ const communityGuidelines = "https://github.com/so-sc/code-of-conduct";
 const Footer = () => {
   return (
     <div className="md:mt-40">
-      <footer className="body-font tracking-wider">
+      <footer className="body-font font-poppinsR tracking-wider">
         <div className="flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="flex flex-grow md:pl-20 mb-10 mx-6 md:mt-0 mt-10 ">
             <div className="lg:w-1/2 md:w-1/2 w-full px-4">
               <div className="flex text-white flex-col">
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={githubLink}
                   target="_blank"
                 >
                   GitHub
                 </Link>
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={linkedinLink}
                   target="_blank"
                 >
                   LinkedIn
                 </Link>
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={instagramLink}
                   target="_blank"
                 >
                   Instagram
                 </Link>
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={facebookLink}
                   target="_blank"
                 >
                   Facebook
                 </Link>
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={twitterLink}
                   target="_blank"
                 >
@@ -57,21 +57,21 @@ const Footer = () => {
             <div className="lg:w-1/2 md:w-1/2 w-full px-4">
               <div className="flex text-white flex-col">
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={youtubeLink}
                   target="_blank"
                 >
                   Youtube
                 </Link>
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={discordLink}
                   target="_blank"
                 >
                   Discord
                 </Link>
                 <Link
-                  className="pt-3 hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+                  className="pt-3 hover:underline w-fit hover:underline-offset-4"
                   href={communityGuidelines}
                   target="_blank"
                 >
@@ -128,13 +128,15 @@ const Footer = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p className="font-jbBold pt-8">Sahyadri Open-Source Community</p>
+            <p className="font-poppinsSB pt-8">
+              Sahyadri Open-Source Community
+            </p>
             <p className="py-2">
               Sahyadri College of Engineering and Management, Adyar, Mangalore -
               575007 IN
             </p>
             <Link
-              className="pt-3 text-[#6D76A3] hover:underline underline-offset-4 w-fit hover:underline-offset-8"
+              className="pt-3 text-violet-400 hover:underline w-fit hover:underline-offset-4"
               href="mailto:sosc@sahyadri.edu.in"
               target="_blank"
             >

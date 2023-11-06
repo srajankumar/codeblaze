@@ -14,30 +14,37 @@ export default function Home() {
     <main className="w-full">
       <div className="flex flex-col h-screen justify-center items-center">
         <Hero />
-        <div className="md:text-3xl text-2xl font-semibold">
+        <div className="md:text-3xl text-2xl font-poppinsSB">
           <TextRunner />
         </div>
+
+        {/* <div className="flex mb-5 font-poppinsSB items-center">
+          <h1 className="text-lg px-3">synergia</h1>
+          <span className="text-lg">|</span>
+          <h1 className="text-lg px-3">hackathon</h1>
+        </div> */}
+
         {/* <RegisterButton /> */}
         {/* <img
-          className="absolute opacity-80 top-full pt-[40rem] left-0 -z-10"
-          src="/blur1.png"
+          className="absolute opacity-50 right-0 top-full -z-10"
+          src="/assets/background/blur1.png"
           alt=""
         />
         <img
-          className="absolute opacity-50 right-0 top-full -z-10"
-          src="/blur4.png"
+          className="absolute opacity-80 top-full pt-[40rem] left-0 -z-10"
+          src="/assets/background/blur2.png"
           alt=""
         /> */}
       </div>
 
       <ScrollToTopButton />
 
-      {/* <div className="lg:px-20 md:px-10">
-        <Date />
-        <About />
-        <Themes />
-        <Events />
-      </div> */}
+      <div className="lg:px-20 md:px-10">
+        {/* <Date /> */}
+        {/* <About /> */}
+        {/* <Themes /> */}
+        {/* <Events /> */}
+      </div>
       <Footer />
     </main>
   );
