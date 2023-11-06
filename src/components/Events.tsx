@@ -4,73 +4,81 @@ import TypingAnimation from "@/components/TextAnimation/TextType";
 const Events = () => {
   const cardData = [
     {
-      title: "UI Battles",
+      title: "Tech-Maze",
       description:
-        "Hello, coders! Get ready for an exhilarating challenge that resonates with your web development enthusiasm. Introducing UI Battles - Code the Logic & Page Cloning Challenge, where your core coding skills face the ultimate test. Compete for a chance to win a ₹10,000 prize pool!",
-      imageSrc: "ui-battles.png",
-      register: "https://www.sosc.org.in/",
-    },
-    {
-      title: "Code Quest",
-      description:
-        "Want to show off your coding skills? Then you have come to the right place. Here you can show your skills by completing the given challenges. Face against your peers to test your current level. Make sure to keep your foundations of coding skills strong. Winners of the competition will be awarded prizes worth ₹10,000/-",
-      imageSrc: "ui-battles.png",
-      register: "https://www.sosc.org.in/",
-    },
-    {
-      title: "E-Games",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
-      imageSrc: "ui-battles.png",
-      register: "https://www.sosc.org.in/",
-    },
-    {
-      title: "Open Source Fiesta",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
-      imageSrc: "ui-battles.png",
-      register: "https://www.sosc.org.in/",
-    },
-    {
-      title: "DeCode",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
-      imageSrc: "ui-battles.png",
-      register: "https://www.sosc.org.in/",
-    },
-    {
-      title: "Techmaze",
-      description:
-        "Are you ready for the ultimate tech-infused escape room challenge? Test your problem-solving and teamwork skills in our immersive Escape Room Tech Challenge! Dive into a high-tech adventure and race against the clock to escape and win amazing prizes.",
+        "Dive into a high-tech adventure in this race against time to Navigate through puzzles and tackle tech-themed challenges which will present you with the key to escape the maze.",
       imageSrc: "techmaze.png",
       register: "https://www.sosc.org.in/",
     },
+
+    {
+      title: "Open Source Fiesta",
+      description:
+        "Delve into the world of open source, contribute to projects and learn from the community. Prepare to enhance your coding skills- one pull request at a time.",
+      imageSrc: "ui-battles.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "DeCode",
+      description:
+        "Suit up for this race to the finish line, by solving security-related challenges and capture virtual 'flags' to claim an exciting slew of prizes waiting at the finish line.",
+      imageSrc: "ui-battles.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "UI Battles",
+      description:
+        "A thrilling web-based challenge that will put your design and coding skills to the test. Participate in this competition to showcase compelling UI using front-end development frameworks.",
+      imageSrc: "ui-battles.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "Code Quest",
+      description:
+        "Armour up with all your coding gear for a showdown in this time-bound quest to test your coding skills. Prepare to face coding challenges and take down your opponents to emerge victorious and claim exclusive prizes.",
+      imageSrc: "ui-battles.png",
+      register: "https://www.sosc.org.in/",
+    },
+
     {
       title: "The Wolf of Dalal Street",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
+        "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
       imageSrc: "ui-battles.png",
       register: "https://www.sosc.org.in/",
     },
+
     {
       title: "Blind Bytes",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
-      imageSrc: "ui-battles.png",
+        "Gear up to test your coding intuition. This exclusive challenge provides an opportunity to enhance precision, logical thinking, and time-management skills, all without relying on sight.",
+      imageSrc: "blind-bytes.png",
       register: "https://www.sosc.org.in/",
     },
+
     {
       title: "The Pitchers",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet unde explicabo voluptates cum. Nulla omnis reiciendis asperiores illum odit laboriosam consequatur cumque velit non sapiente, quae ad porro perspiciatis.",
+        "Unveil your groundbreaking ideas, gain exposure, and compete for a place in the future of technology and entrepreneurship in this 'Tech Startup Pitching' competition.",
+      imageSrc: "ui-battles.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "E-Games",
+      description:
+        "Compete for glory (and prizes) and experience the thrill of victory in these exciting games that need no introduction.",
       imageSrc: "ui-battles.png",
       register: "https://www.sosc.org.in/",
     },
   ];
   return (
     <div className="py-10 px-2 md:px-0">
-      <h1 className="px-4 text-3xl md:text-4xl font-poppinsB py-5">
-        <TypingAnimation message="Other Events" />
+      <h1 className="px-4 select-none text-3xl md:text-4xl font-poppinsB py-5">
+        <TypingAnimation message="Events" />
       </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 md:justify-start justify-center w-fit">
         {cardData.map((data, index) => (

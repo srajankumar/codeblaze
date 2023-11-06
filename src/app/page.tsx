@@ -12,9 +12,9 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="w-full">
-      <div className="flex flex-col h-screen justify-center items-center">
+      <div className="flex flex-col select-none h-screen justify-center items-center">
         <Hero />
-        <div className="md:text-3xl text-2xl font-poppinsSB">
+        <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
           <TextRunner />
         </div>
 
@@ -25,12 +25,12 @@ export default function Home() {
         </div> */}
 
         {/* <RegisterButton /> */}
-        {/* <img
+        <img
           className="absolute opacity-50 right-0 top-full -z-10"
           src="/assets/background/blur1.png"
           alt=""
         />
-        <img
+        {/* <img
           className="absolute opacity-80 top-full pt-[40rem] left-0 -z-10"
           src="/assets/background/blur2.png"
           alt=""
@@ -41,7 +41,7 @@ export default function Home() {
 
       <div className="lg:px-20 md:px-10">
         {/* <Date /> */}
-        {/* <About /> */}
+        <About />
         {/* <Themes /> */}
         {/* <Events /> */}
       </div>

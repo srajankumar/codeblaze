@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "codeblaze",
-  title: "codeblaze",
+  name: "Codeblaze",
+  title: "Codeblaze",
   register: "",
   url: "https://codeblaze.sosc.org.in",
   ogImage: "https://codeblaze.sosc.org.in/og.png",

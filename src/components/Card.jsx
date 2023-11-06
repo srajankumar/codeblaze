@@ -62,7 +62,7 @@ const Card = ({ title, description, imageSrc, register }) => {
           <p className="font-poppinsR border-t-2 border-[#6D76A3] pt-3 leading-relaxed mb-3">
             {description}
           </p>
-          <Link target="_blank" href={register}>
+          {/* <Link target="_blank" href={register}>
             <div className="group flex w-fit rounded-full border sm:border-transparent sm:px-9 px-6 sm:py-3 py-2 transition-colors bg-transparent sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
               <h2 className="sm:text-lg font-poppinsSB">
                 Register{" "}
@@ -71,7 +71,7 @@ const Card = ({ title, description, imageSrc, register }) => {
                 </span>
               </h2>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

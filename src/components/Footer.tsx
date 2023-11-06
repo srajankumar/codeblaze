@@ -136,7 +136,7 @@ const Footer = () => {
               575007 IN
             </p>
             <Link
-              className="pt-3 text-[#6D76A3] hover:underline w-fit hover:underline-offset-4"
+              className="pt-3 text-violet-400 hover:underline w-fit hover:underline-offset-4"
               href="mailto:sosc@sahyadri.edu.in"
               target="_blank"
             >
