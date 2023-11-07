@@ -33,9 +33,12 @@ const About = () => {
           domains. It aims to empower participants with knowledge and skills
           while fostering curiosity and innovation. With a variety of
           tech-focused events, it offers opportunities for growth and
-          self-discovery. Join the 24-hour on-site Hackathon to turn your
-          innovative ideas into reality, with themes suitable for all skill
-          levels.
+          self-discovery. Join the{" "}
+          <span className="grad font-poppinsB tracking-wide">
+            24-hour on-site Hackathon
+          </span>{" "}
+          to turn your innovative ideas into reality, with themes suitable for
+          all skill levels.
         </p>
       </div>
     </div>
