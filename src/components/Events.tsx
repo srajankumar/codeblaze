@@ -15,39 +15,7 @@ const Events = () => {
       title: "Code Quest",
       description:
         "Armour up with all your coding gear for a showdown in this time-bound quest to test your coding skills. Prepare to face coding challenges and take down your opponents to emerge victorious and claim exclusive prizes.",
-      imageSrc: "ui-battles.webp",
-      register: "https://www.sosc.org.in/",
-    },
-
-    {
-      title: "The Wolf of Dalal Street",
-      description:
-        "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
-      imageSrc: "ui-battles.webp",
-      register: "https://www.sosc.org.in/",
-    },
-
-    {
-      title: "Tech-Maze",
-      description:
-        "Dive into a high-tech adventure in this race against time to Navigate through puzzles and tackle tech-themed challenges which will present you with the key to escape the maze.",
-      imageSrc: "ui-battles.webp",
-      register: "https://www.sosc.org.in/",
-    },
-
-    {
-      title: "Open Source Fiesta",
-      description:
-        "Delve into the world of open source, contribute to projects and learn from the community. Prepare to enhance your coding skills- one pull request at a time.",
-      imageSrc: "ui-battles.webp",
-      register: "https://www.sosc.org.in/",
-    },
-
-    {
-      title: "DeCode",
-      description:
-        "Suit up for this race to the finish line, by solving security-related challenges and capture virtual 'flags' to claim an exciting slew of prizes waiting at the finish line.",
-      imageSrc: "ui-battles.webp",
+      imageSrc: "code-quest.webp",
       register: "https://www.sosc.org.in/",
     },
 
@@ -55,7 +23,39 @@ const Events = () => {
       title: "Blind Bytes",
       description:
         "Gear up to test your coding intuition. This exclusive challenge provides an opportunity to enhance precision, logical thinking, and time-management skills, all without relying on sight.",
-      imageSrc: "ui-battles.webp",
+      imageSrc: "blindb.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "Tech-Maze",
+      description:
+        "Dive into a high-tech adventure in this race against time to Navigate through puzzles and tackle tech-themed challenges which will present you with the key to escape the maze.",
+      imageSrc: "techmaze.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "Open Source Fiesta",
+      description:
+        "Delve into the world of open source, contribute to projects and learn from the community. Prepare to enhance your coding skills- one pull request at a time.",
+      imageSrc: "open-source.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "The Wolf of Dalal Street",
+      description:
+        "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
+      imageSrc: "wolf.png",
+      register: "https://www.sosc.org.in/",
+    },
+
+    {
+      title: "DeCode",
+      description:
+        "Suit up for this race to the finish line, by solving security-related challenges and capture virtual 'flags' to claim an exciting slew of prizes waiting at the finish line.",
+      imageSrc: "decode.png",
       register: "https://www.sosc.org.in/",
     },
 
@@ -71,7 +71,7 @@ const Events = () => {
       title: "E-Games",
       description:
         "Compete for glory (and prizes) and experience the thrill of victory in these exciting games that need no introduction.",
-      imageSrc: "ui-battles.webp",
+      imageSrc: "eclash.webp",
       register: "https://www.sosc.org.in/",
     },
   ];

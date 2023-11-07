@@ -26,7 +26,7 @@ const About = () => {
               // href=""
               // target="_blank"
             >
-              Synergia
+              synergia
             </span>{" "}
           </span>
           is set to be among the most exciting and immersive events of the year.
