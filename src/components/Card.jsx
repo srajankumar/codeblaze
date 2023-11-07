@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import Link from "next/link";
 
-const EventCard = ({ title, description, imageSrc, register }) => {
+const EventCard = ({ title, description, imageSrc, register, rule }) => {
   return (
     <div className="p-4 w-full">
       <div className="md:flex hidden">
@@ -13,6 +13,7 @@ const EventCard = ({ title, description, imageSrc, register }) => {
             description={description}
             imageSrc={imageSrc}
             register={register}
+            rule={rule}
           />
         </Tilt>
       </div>
@@ -28,7 +29,7 @@ const EventCard = ({ title, description, imageSrc, register }) => {
   );
 };
 
-const Card = ({ title, description, imageSrc, register }) => {
+const Card = ({ title, description, imageSrc, register, rule }) => {
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -62,16 +63,32 @@ const Card = ({ title, description, imageSrc, register }) => {
           <p className="font-poppinsR border-t-2 border-[#6D76A3] pt-3 leading-relaxed mb-3">
             {description}
           </p>
-          {/* <Link target="_blank" href={register}>
-            <div className="group flex w-fit rounded-full border sm:border-transparent sm:px-9 px-6 sm:py-3 py-2 transition-colors bg-transparent sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
-              <h2 className="sm:text-lg font-poppinsSB">
-                Register{" "}
-                <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </h2>
-            </div>
-          </Link> */}
+          <div className="flex ">
+            {register && (
+              <Link target="_blank" href={register}>
+                <div className="group flex w-fit rounded-full border sm:border-transparent sm:px-9 px-6 sm:py-3 py-2 transition-colors bg-transparent sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
+                  <h2 className="sm:text-lg font-poppinsSB">
+                    Register{" "}
+                    <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                      -&gt;
+                    </span>
+                  </h2>
+                </div>
+              </Link>
+            )}
+            {rule && (
+              <Link target="_blank" href={rule}>
+                <div className="group flex w-fit rounded-full border sm:border-transparent sm:px-9 px-6 sm:py-3 py-2 transition-colors bg-transparent sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
+                  <h2 className="sm:text-lg font-poppinsSB">
+                    Rule Book{" "}
+                    <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                      -&gt;
+                    </span>
+                  </h2>
+                </div>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>

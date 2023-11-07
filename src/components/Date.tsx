@@ -14,18 +14,18 @@ const RegistrationButton = () => {
   return (
     <div className="select-none">
       <div className="flex flex-col justify-center items-center h-full">
-        <h1 className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
+        {/* <h1 className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
           8th and 9th December
-        </h1>
+        </h1> */}
+        <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
+          <TextRunner />
+        </div>
         <div className="md:pt-5 pt-2 font-poppinsSB tracking-widest text-center text-2xl md:text-3xl">
           {!hackathonRevealed ? (
             <Timer targetTime={revealTime} onTimeout={handleTimeout} />
           ) : (
             <div>Hackathon Has Begun!</div>
           )}
-        </div>
-        <div className="md:text-3xl md:pt-5 pt-2 select-none text-xl sm:text-2xl font-poppinsSB">
-          <TextRunner />
         </div>
       </div>
     </div>
