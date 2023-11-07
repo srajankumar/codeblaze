@@ -30,20 +30,20 @@ export default function Home() {
           src="/assets/background/blur1.png"
           alt=""
         />
-        {/* <img
+        <img
           className="absolute opacity-80 top-full pt-[40rem] left-0 -z-10"
           src="/assets/background/blur2.png"
           alt=""
-        /> */}
+        />
       </div>
 
       <ScrollToTopButton />
 
       <div className="lg:px-20 md:px-10">
-        {/* <Date /> */}
+        <Date />
         <About />
-        {/* <Themes /> */}
-        {/* <Events /> */}
+        <Themes />
+        <Events />
       </div>
       <Footer />
     </main>

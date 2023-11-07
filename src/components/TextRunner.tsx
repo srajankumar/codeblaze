@@ -6,7 +6,7 @@ type Props = {};
 
 const TextRunner = (props: Props) => {
   const [text, count] = useTypewriter({
-    words: ["coming soon", "stay tuned"],
+    words: ["registrations opening soon", "stay tuned"],
     loop: true,
     delaySpeed: 3000,
     deleteSpeed: 50,

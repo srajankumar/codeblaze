@@ -2,7 +2,7 @@ import TypingAnimation from "@/components/TextAnimation/TextType";
 import Link from "next/link";
 const About = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center py-10 px-2 md:px-0">
+    <div className="flex flex-col pt-36 justify-center py-10 px-2 md:px-0">
       <h1 className="px-4 text-3xl select-none md:text-4xl font-poppinsB py-5">
         <TypingAnimation message="About" />
       </h1>
