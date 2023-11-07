@@ -135,13 +135,22 @@ const Footer = () => {
               Sahyadri College of Engineering and Management, Adyar, Mangalore -
               575007 IN
             </p>
-            <Link
-              className="pt-3 text-violet-400 hover:underline w-fit hover:underline-offset-4"
-              href="mailto:sosc@sahyadri.edu.in"
-              target="_blank"
-            >
-              sosc@sahyadri.edu.in
-            </Link>
+            <div className="flex lg:flex-row flex-col w-full">
+              <Link
+                className="pt-3 mr-5 text-pink-400 hover:underline w-fit hover:underline-offset-4"
+                href="mailto:sosc@sahyadri.edu.in"
+                target="_blank"
+              >
+                sosc@sahyadri.edu.in
+              </Link>
+              <Link
+                className="lg:pt-3 pt-2 text-violet-400 hover:underline w-fit hover:underline-offset-4"
+                href="tel:+918762458575"
+                target="_blank"
+              >
+                +91 87624 58575
+              </Link>
+            </div>
           </div>
         </div>
         <div className="text-white">

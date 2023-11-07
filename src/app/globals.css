@@ -49,12 +49,10 @@
   background: #5c636e;
 }
 
-@media (max-width: 500px) {
-  body {
-    background-image: url("/assets/background/blur3.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-  }
+body {
+  background-image: url("/assets/background/blur3.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
 
 .grad {
