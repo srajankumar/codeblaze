@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
+  description: siteConfig.description,
+  keywords: [
+    "sosc",
+    "Sahyadri Open Source Community",
+    "Codeblaze",
+    "Codeblaze hackathon",
+    "Hackathon",
+  ],
   creator: "so-sc",
   openGraph: {
     type: "website",
