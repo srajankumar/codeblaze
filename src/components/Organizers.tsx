@@ -8,7 +8,7 @@ const Organizers = () => {
       {/* <h1 className="px-4 text-3xl select-none md:text-4xl font-poppinsB py-5">
         <TypingAnimation message="About" />
       </h1> */}
-      <div className="px-4">
+      <div className="md:px-4 px-12">
         <div className="grid md:flex grid-cols-2 w-full items-center justify-between">
           <Link
             href="https://www.sosc.org.in/"
@@ -34,7 +34,6 @@ const Organizers = () => {
               alt="aerophilia"
             />
           </Link>
-
           <Link
             href="https://sahyadri.edu.in/"
             target="_blank"
