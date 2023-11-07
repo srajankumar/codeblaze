@@ -8,6 +8,7 @@ import About from "@/components/About";
 import Themes from "@/components/Themes";
 import Events from "@/components/Events";
 import Footer from "@/components/Footer";
+import Organizers from "@/components/Organizers";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
         <About />
         <Themes />
         <Events />
+        <Organizers />
       </div>
       <Footer />
     </main>

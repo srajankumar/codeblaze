@@ -12,7 +12,7 @@ export default function Themes() {
       </h1>
       <div className="px-4 grid md:grid-cols-2 gap-10">
         <Card img="company.png" theme="Company Specific" />
-        <Card img="open.png" theme="Open Themes" />
+        <Card img="open.png" theme="Open Theme" />
       </div>
     </div>
   );
