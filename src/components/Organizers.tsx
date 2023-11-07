@@ -1,7 +1,6 @@
 "use client";
 import TypingAnimation from "@/components/TextAnimation/TextType";
 import Link from "next/link";
-import Carousel from "nuka-carousel";
 import Image from "next/image";
 const Organizers = () => {
   return (
