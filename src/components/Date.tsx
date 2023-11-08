@@ -14,9 +14,6 @@ const RegistrationButton = () => {
   return (
     <div className="select-none">
       <div className="flex flex-col justify-center items-center h-full">
-        {/* <h1 className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
-          8th and 9th December
-        </h1> */}
         <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
           <TextRunner />
         </div>
@@ -27,6 +24,9 @@ const RegistrationButton = () => {
             <div>Hackathon Has Begun!</div>
           )}
         </div>
+        <h1 className="md:pt-5 pt-2 md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB tracking-wider">
+          8th and 9th December
+        </h1>
       </div>
     </div>
   );
