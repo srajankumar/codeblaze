@@ -60,3 +60,15 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+.grad1 {
+  background: linear-gradient(to right, #0cd870, #08dc56, #0bde4a);
+  background-clip: text;
+  color: transparent;
+  border-bottom: 2px solid transparent; /* Set an initial transparent underline */
+  transition: border-color 0.2s; /* Add a smooth transition effect for the color change */
+}
+
+.grad1:hover {
+  border-color: #0cd870;
+}

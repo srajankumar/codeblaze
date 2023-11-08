@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import Link from "next/link";
 
-const EventCard = ({ title, description, imageSrc, register, rule }) => {
+const EventCard = ({ title, description, imageSrc, register, rule, link }) => {
   return (
     <div className="p-4 w-full">
       <div className="md:flex hidden">
@@ -14,6 +14,7 @@ const EventCard = ({ title, description, imageSrc, register, rule }) => {
             imageSrc={imageSrc}
             register={register}
             rule={rule}
+            link={link}
           />
         </Tilt>
       </div>
@@ -23,13 +24,14 @@ const EventCard = ({ title, description, imageSrc, register, rule }) => {
           description={description}
           imageSrc={imageSrc}
           register={register}
+          link={link}
         />
       </div>
     </div>
   );
 };
 
-const Card = ({ title, description, imageSrc, register, rule }) => {
+const Card = ({ title, description, imageSrc, register, rule, link }) => {
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -81,6 +83,18 @@ const Card = ({ title, description, imageSrc, register, rule }) => {
                 <div className="group flex w-fit rounded-full border sm:border-transparent sm:px-9 px-6 sm:py-3 py-2 transition-colors bg-transparent sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
                   <h2 className="sm:text-lg font-poppinsSB">
                     Rule Book{" "}
+                    <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                      -&gt;
+                    </span>
+                  </h2>
+                </div>
+              </Link>
+            )}
+            {link && (
+              <Link target="_blank" href={link}>
+                <div className="group flex w-fit rounded-full border sm:border-transparent sm:px-9 px-6 sm:py-3 py-2 transition-colors bg-transparent sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
+                  <h2 className="sm:text-lg font-poppinsSB">
+                    More Events{" "}
                     <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                       -&gt;
                     </span>

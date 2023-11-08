@@ -10,6 +10,7 @@ const Events = () => {
       imageSrc: "ui-battles.webp",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -19,6 +20,7 @@ const Events = () => {
       imageSrc: "code-quest.webp",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -28,6 +30,7 @@ const Events = () => {
       imageSrc: "blindb.png",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -37,6 +40,7 @@ const Events = () => {
       imageSrc: "techmaze.png",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -46,6 +50,7 @@ const Events = () => {
       imageSrc: "open-source.png",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -55,6 +60,7 @@ const Events = () => {
       imageSrc: "wolf.png",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -64,15 +70,17 @@ const Events = () => {
       imageSrc: "decode.png",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
       title: "The Pitchers",
       description:
         "Unveil your groundbreaking ideas, gain exposure, and compete for a place in the future of technology and entrepreneurship in this 'Tech Startup Pitching' competition.",
-      imageSrc: "ui-battles.webp",
+      imageSrc: "pitchers.png",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -82,6 +90,7 @@ const Events = () => {
       imageSrc: "firepower.png",
       register: "",
       rule: "",
+      link: "",
     },
 
     {
@@ -89,8 +98,9 @@ const Events = () => {
       description:
         "Aerophilia, a national tech fest, features Aeromodelling, Drone racing, RC Bots, and fun activities to inspire and educate young minds in technology for national development.",
       imageSrc: "aerophilia.png",
-      register: "https://aerophilia.in/",
+      register: "",
       rule: "",
+      link: "https://aerophilia.in/",
     },
   ];
   return (
@@ -107,6 +117,7 @@ const Events = () => {
             imageSrc={data.imageSrc}
             register={data.register}
             rule={data.rule}
+            link={data.link}
           />
         ))}
       </div>
