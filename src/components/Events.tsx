@@ -57,7 +57,7 @@ const Events = () => {
       title: "The Wolf of Dalal Street",
       description:
         "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
-      imageSrc: "wolf.png",
+      imageSrc: "wolf-of-dalal-street.jpg",
       register: "",
       rule: "",
       link: "",
