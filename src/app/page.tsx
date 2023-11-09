@@ -11,6 +11,7 @@ import Themes from "@/components/Themes";
 import Events from "@/components/Events";
 import Footer from "@/components/Footer";
 import Organizers from "@/components/Organizers";
+import CountDown from "@/components/TextAnimation/CountDown";
 
 export default function Home() {
   return (
@@ -50,7 +51,8 @@ export default function Home() {
       <ScrollToTopButton />
 
       <div className="lg:px-20 md:px-10">
-        <Date />
+        {/* <Date /> */}
+        <CountDown/>
         <About />
         <Themes />
         <Events />
