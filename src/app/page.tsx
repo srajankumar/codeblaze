@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import RegisterButton from "@/components/RegisterButton";
 import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
+import Image from "next/image";
 
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 
@@ -22,7 +23,15 @@ export default function Home() {
         </div> */}
         <div className="flex mb-5 font-poppinsSB items-center">
           {/* <h1 className="md:text-2xl text-lg px-3">8 & 9</h1> */}
-          <img className="w-12 pr-2" src="/sosc-trans.png" alt="" />
+          <Image
+            width={500}
+            height={500}
+            unoptimized={true}
+            priority
+            className="w-12 pr-2"
+            src="/sosc-trans.svg"
+            alt="sosc"
+          />
           <span className="md:text-2xl text-lg">|</span>
           <h1 className="md:text-2xl text-lg pl-3">hackathon</h1>
           <div className="md:text-3xl select-none pr-3 text-xl sm:text-2xl font-poppinsSB">
@@ -34,14 +43,35 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="absolute z-40 float1 bottom-0 py-10">
+          <svg
+            className="w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="currentColor"
+              d="M104.704 338.752a64 64 0 0 1 90.496 0l316.8 316.8l316.8-316.8a64 64 0 0 1 90.496 90.496L557.248 791.296a64 64 0 0 1-90.496 0L104.704 429.248a64 64 0 0 1 0-90.496z"
+            />
+          </svg>
+        </div>
+
         {/* <RegisterButton /> */}
-        <img
+        <Image
+          width={700}
+          height={500}
+          priority
           className="absolute opacity-50 right-0 top-full -z-10"
           src="/assets/background/blur1.png"
           alt=""
         />
-        <img
-          className="absolute opacity-80 top-full pt-[40rem] left-0 -z-10"
+        <Image
+          width={700}
+          height={500}
+          priority
+          className="absolute opacity-80 top-full pt-[42rem] left-0 -z-10"
           src="/assets/background/blur2.png"
           alt=""
         />

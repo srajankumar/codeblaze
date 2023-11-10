@@ -12,7 +12,7 @@ const RegistrationButton = () => {
   };
 
   return (
-    <div className="select-none">
+    <div className="select-none pt-20">
       <div className="flex flex-col justify-center items-center h-full">
         <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
           <TextRunner />
