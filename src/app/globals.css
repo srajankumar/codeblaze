@@ -72,3 +72,20 @@ body {
 .grad1:hover {
   border-color: #0cd870;
 }
+
+.float1 {
+  transform: translateX(0px);
+  animation: float1 4s ease-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
