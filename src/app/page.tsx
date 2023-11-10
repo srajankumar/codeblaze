@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import RegisterButton from "@/components/RegisterButton";
 import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
+import Image from "next/image";
 
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 
@@ -22,7 +23,15 @@ export default function Home() {
         </div> */}
         <div className="flex mb-5 font-poppinsSB items-center">
           {/* <h1 className="md:text-2xl text-lg px-3">8 & 9</h1> */}
-          <img className="w-12 pr-2" src="/sosc-trans.png" alt="" />
+          <Image
+            width={500}
+            height={500}
+            unoptimized={true}
+            priority
+            className="w-12 pr-2"
+            src="/sosc-trans.svg"
+            alt="sosc"
+          />
           <span className="md:text-2xl text-lg">|</span>
           <h1 className="md:text-2xl text-lg pl-3">hackathon</h1>
           <div className="md:text-3xl select-none pr-3 text-xl sm:text-2xl font-poppinsSB">
