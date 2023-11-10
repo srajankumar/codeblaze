@@ -45,6 +45,7 @@ export default function Home() {
 
         <div className="absolute z-40 float1 bottom-0 py-10">
           <svg
+            className="w-8"
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
