@@ -82,7 +82,12 @@ export default function Home() {
 
       <div className="lg:px-20 md:px-10">
         {/* <Date /> */}
-        <CountDown/>
+        <div className="md:my-36 md:mt-40 text-center mt-24">
+          <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
+            <TextRunner />
+          </div>
+          <CountDown />
+        </div>
         <About />
         <Themes />
         <Events />
