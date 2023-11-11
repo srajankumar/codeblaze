@@ -6,11 +6,13 @@ const Events = () => {
     {
       title: "UI Battles",
       description:
-        "A thrilling web-based challenge that will put your design and coding skills to the test. Participate in this competition to showcase compelling UI using HTML, CSS and JavaScript.",
+        "A thrilling web-based challenge that will put your design and coding skills to the test. Participate in this competition to showcase compelling UI using HTML, CSS, JavaScript and / or other CSS Libraries.",
       imageSrc: "ui-battles.webp",
       register: "",
       rule: "",
       link: "",
+      date: "8th Dec",
+      time: "01:30 - 03:00 PM",
     },
 
     {
@@ -21,6 +23,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "8th Dec",
+      time: "11:30 - 01:00 PM",
     },
 
     {
@@ -31,6 +35,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "8th Dec",
+      time: "02:45 - 04:00 PM",
     },
 
     {
@@ -41,6 +47,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "7th - 8th Dec",
+      time: "",
     },
 
     {
@@ -51,6 +59,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "6th - 9th Dec",
+      time: "",
     },
 
     {
@@ -61,6 +71,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "8th Dec",
+      time: "09:30 - 12:30 PM",
     },
 
     {
@@ -71,6 +83,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "9th Dec",
+      time: "01:30 - 02:45 PM",
     },
 
     {
@@ -81,6 +95,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "8th Dec",
+      time: "9:30 - 10:30 AM",
     },
 
     {
@@ -91,6 +107,8 @@ const Events = () => {
       register: "",
       rule: "",
       link: "",
+      date: "8th - 9th Dec",
+      time: "",
     },
 
     {
@@ -118,6 +136,8 @@ const Events = () => {
             register={data.register}
             rule={data.rule}
             link={data.link}
+            date={data.date}
+            time={data.time}
           />
         ))}
       </div>
