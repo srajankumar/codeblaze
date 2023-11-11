@@ -6,28 +6,8 @@ const Events = () => {
     {
       title: "UI Battles",
       description:
-        "A thrilling web-based challenge that will put your design and coding skills to the test. Participate in this competition to showcase compelling UI using front-end development frameworks.",
+        "A thrilling web-based challenge that will put your design and coding skills to the test. Participate in this competition to showcase compelling UI using HTML, CSS and JavaScript.",
       imageSrc: "ui-battles.webp",
-      register: "",
-      rule: "",
-      link: "",
-    },
-
-    {
-      title: "Code Quest",
-      description:
-        "Armour up with all your coding gear for a showdown in this time-bound quest to test your coding skills. Prepare to face coding challenges and take down your opponents to emerge victorious and claim exclusive prizes.",
-      imageSrc: "code-quest.webp",
-      register: "",
-      rule: "",
-      link: "",
-    },
-
-    {
-      title: "Blind Bytes",
-      description:
-        "Gear up to test your coding intuition. This exclusive challenge provides an opportunity to enhance precision, logical thinking, and time-management skills, all without relying on sight.",
-      imageSrc: "blindb.png",
       register: "",
       rule: "",
       link: "",
@@ -44,10 +24,10 @@ const Events = () => {
     },
 
     {
-      title: "Open Source Fiesta",
+      title: "Blind Bytes",
       description:
-        "Delve into the world of open source, contribute to projects and learn from the community. Prepare to enhance your coding skills- one pull request at a time.",
-      imageSrc: "open-source.png",
+        "Gear up to test your coding intuition. This exclusive challenge provides an opportunity to enhance precision, logical thinking, and time-management skills, all without relying on sight.",
+      imageSrc: "blindb.png",
       register: "",
       rule: "",
       link: "",
@@ -58,6 +38,26 @@ const Events = () => {
       description:
         "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
       imageSrc: "wolf-of-dalal-street.jpg",
+      register: "",
+      rule: "",
+      link: "",
+    },
+
+    {
+      title: "Open Source Fiesta",
+      description:
+        "Delve into the world of open source, contribute to projects and learn from the community. Prepare to enhance your coding skills- one pull request at a time.",
+      imageSrc: "open-source.png",
+      register: "",
+      rule: "",
+      link: "",
+    },
+
+    {
+      title: "Code Quest",
+      description:
+        "Armour up with all your coding gear for a showdown in this time-bound quest to test your coding skills. Prepare to face coding challenges and take down your opponents to emerge victorious and claim exclusive prizes.",
+      imageSrc: "code-quest.webp",
       register: "",
       rule: "",
       link: "",
@@ -84,7 +84,7 @@ const Events = () => {
     },
 
     {
-      title: "E-Games",
+      title: "Firepower",
       description:
         "Compete for glory (and prizes) and experience the thrill of victory in these exciting games that need no introduction.",
       imageSrc: "firepower.png",
