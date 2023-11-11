@@ -119,7 +119,7 @@ const Card = ({
           </div>
           <div className="flex w-full justify-center flex-wrap">
             {link && (
-              <Link target="_blank" href={link}>
+              <Link target="_blank" className="mt-2" href={link}>
                 <div className="group flex w-fit rounded-full border sm:border-transparent sm:px-7 px-6 sm:py-2 py-2 transition-colors bg-transparent sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
                   <h2 className="sm:text-lg tracking-wide font-poppinsSB">
                     More Events{" "}
