@@ -102,7 +102,7 @@ const Events = () => {
     {
       title: "Firepower",
       description:
-        "Compete for glory (and prizes) and experience the thrill of victory in these exciting games that need no introduction.",
+        "Join our Valorant Offline Tournament for top-tier gameplay, strategic brilliance, and the chance to win incredible prizes! Experience intense competition, unexpected comebacks, and the thrill of victory!",
       imageSrc: "firepower.png",
       register: "",
       rule: "",
