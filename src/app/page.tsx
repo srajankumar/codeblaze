@@ -4,6 +4,8 @@ import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
 import Image from "next/image";
 
+import { siteConfig } from "@/config/site";
+
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 import Date from "@/components/Date";
@@ -19,29 +21,29 @@ export default function Home() {
     <main className="w-full">
       <div className="flex flex-col select-none h-screen justify-center items-center">
         <Hero />
-        {/* <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
-          <TextRunner />
-        </div> */}
-        <div className="flex mb-5 font-poppinsSB items-center">
-          {/* <h1 className="md:text-2xl text-lg px-3">8 & 9</h1> */}
-          <Image
-            width={500}
-            height={500}
-            unoptimized={true}
-            priority
-            className="w-12 pr-2"
-            src="/sosc-trans.svg"
-            alt="sosc"
-          />
-          <span className="md:text-2xl text-lg">|</span>
-          <h1 className="md:text-2xl text-lg pl-3">hackathon</h1>
-          <div className="md:text-3xl select-none pr-3 text-xl sm:text-2xl font-poppinsSB">
-            <Cursor
-              cursorStyle="."
-              cursorColor="#C76988"
-              cursorBlinking={true}
+
+        <div className="flex md:flex-row flex-col mb-5 font-poppinsSB items-center">
+          <div className="flex w-fit md:mb-0 mb-5">
+            <Image
+              width={500}
+              height={500}
+              unoptimized={true}
+              priority
+              className="w-12 pr-2"
+              src="/sosc-trans.svg"
+              alt="sosc"
             />
+            <span className="md:text-2xl text-lg">|</span>
+            <h1 className="md:text-2xl text-lg pl-3">hackathon</h1>
+            <div className="md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
+              <Cursor
+                cursorStyle="."
+                cursorColor="#C76988"
+                cursorBlinking={true}
+              />
+            </div>
           </div>
+          <RegisterButton />
         </div>
 
         <div className="absolute z-40 float1 bottom-0 py-10">
@@ -83,9 +85,13 @@ export default function Home() {
       <div className="lg:px-20 md:px-10">
         {/* <Date /> */}
         <div className="md:my-36 md:mt-40 text-center mt-24">
-          <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
-            <TextRunner />
-          </div>
+          {!siteConfig.register ? (
+            <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
+              <TextRunner />
+            </div>
+          ) : (
+            <></>
+          )}
           <CountDown />
         </div>
         <About />

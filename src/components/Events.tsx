@@ -6,13 +6,37 @@ const Events = () => {
     {
       title: "UI Battles",
       description:
-        "A thrilling web-based challenge that will put your design and coding skills to the test. Participate in this competition to showcase compelling UI using HTML, CSS, JavaScript and / or other CSS Libraries.",
+        "A thrilling web-based challenge that will put your design and coding skills to the test. Participate in this competition to showcase a compelling UI using HTML, CSS, JavaScript and / or other CSS Libraries.",
       imageSrc: "ui-battles.webp",
-      register: "",
+      register: "https://aerophilia.in/courses",
       rule: "",
       link: "",
       date: "8th Dec",
       time: "01:30 - 03:00 PM",
+    },
+
+    {
+      title: "Code Quest",
+      description:
+        "Armour up with all your coding gear for a showdown in this time-bound quest to test your coding skills. Prepare to face coding challenges and take down your opponents to emerge victorious and claim exclusive prizes.",
+      imageSrc: "code-quest.webp",
+      register: "https://aerophilia.in/courses",
+      rule: "",
+      link: "",
+      date: "9th Dec",
+      time: "09:30 - 12:30 PM",
+    },
+
+    {
+      title: "Firepower",
+      description:
+        "Join our Valorant Offline Tournament for top-tier gameplay, strategic brilliance, and the chance to win incredible prizes! Experience intense competition, unexpected comebacks, and the thrill of victory!",
+      imageSrc: "firepower.png",
+      register: "https://aerophilia.in/courses",
+      rule: "",
+      link: "",
+      date: "8th - 9th Dec",
+      time: "",
     },
 
     {
@@ -40,18 +64,6 @@ const Events = () => {
     },
 
     {
-      title: "The Wolf of Dalal Street",
-      description:
-        "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
-      imageSrc: "wolf-of-dalal-street.jpg",
-      register: "",
-      rule: "",
-      link: "",
-      date: "7th - 8th Dec",
-      time: "",
-    },
-
-    {
       title: "Open Source Fiesta",
       description:
         "Delve into the world of open source, contribute to projects and learn from the community. Prepare to enhance your coding skills- one pull request at a time.",
@@ -64,27 +76,15 @@ const Events = () => {
     },
 
     {
-      title: "Code Quest",
+      title: "The Wolf of Dalal Street",
       description:
-        "Armour up with all your coding gear for a showdown in this time-bound quest to test your coding skills. Prepare to face coding challenges and take down your opponents to emerge victorious and claim exclusive prizes.",
-      imageSrc: "code-quest.webp",
+        "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
+      imageSrc: "wolf-of-dalal-street.jpg",
       register: "",
       rule: "",
       link: "",
-      date: "8th Dec",
-      time: "09:30 - 12:30 PM",
-    },
-
-    {
-      title: "DeCode",
-      description:
-        "Suit up for this race to the finish line, by solving security-related challenges and capture virtual 'flags' to claim an exciting slew of prizes waiting at the finish line.",
-      imageSrc: "decode.png",
-      register: "",
-      rule: "",
-      link: "",
-      date: "9th Dec",
-      time: "01:30 - 02:45 PM",
+      date: "7th - 8th Dec",
+      time: "",
     },
 
     {
@@ -100,15 +100,15 @@ const Events = () => {
     },
 
     {
-      title: "Firepower",
+      title: "DeCode",
       description:
-        "Join our Valorant Offline Tournament for top-tier gameplay, strategic brilliance, and the chance to win incredible prizes! Experience intense competition, unexpected comebacks, and the thrill of victory!",
-      imageSrc: "firepower.png",
+        "Suit up for this race to the finish line, by solving security-related challenges and capture virtual 'flags' to claim an exciting slew of prizes waiting at the finish line.",
+      imageSrc: "decode.png",
       register: "",
       rule: "",
       link: "",
-      date: "8th - 9th Dec",
-      time: "",
+      date: "9th Dec",
+      time: "01:30 - 02:45 PM",
     },
 
     {

@@ -71,7 +71,7 @@ const CountDown = () => {
         transition={{ duration: 0.5 }}
         className="text-center"
       >
-        <div className="md:text-3xl select-none text-xl sm:text-2xl font-poppinsSB">
+        <div className="md:text-3xl select-none text-xl tracking-wide sm:text-2xl font-poppinsSB">
           On 8th and 9th Dec
           <Cursor cursorStyle="." cursorColor="#C76988" cursorBlinking={true} />
         </div>

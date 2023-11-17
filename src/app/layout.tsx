@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     "Hackathon",
   ],
   creator: "so-sc",
+  other: {
+    "theme-color": "#000000",
+    "color-scheme": "dark only",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
