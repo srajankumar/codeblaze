@@ -66,7 +66,7 @@ export default function Home() {
           width={700}
           height={500}
           priority
-          className="absolute opacity-50 right-0 top-full -z-10"
+          className="absolute opacity-50 right-0 top-full"
           src="/assets/background/blur1.png"
           alt=""
         />
@@ -74,7 +74,7 @@ export default function Home() {
           width={700}
           height={500}
           priority
-          className="absolute opacity-80 top-full pt-[42rem] left-0 -z-10"
+          className="absolute opacity-80 top-full pt-[42rem] left-0 "
           src="/assets/background/blur2.png"
           alt=""
         />
