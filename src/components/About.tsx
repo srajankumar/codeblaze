@@ -36,6 +36,18 @@ const About = () => {
           all skill levels.
         </p>
       </div>
+      <div className="px-4 py-5 z-50 font-poppinsR leading-8 text-lg">
+        <Link href="/rulebooks/hackathon.pdf" target="_blank">
+          <div className="group flex w-fit rounded-full border tracking-wide px-5 py-2 transition-colors sm:bg-transparent bg-neutral-800/30 sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
+            <h2 className="sm:text-lg font-poppinsSB">
+              Download Hackathon Rulebook{" "}
+              <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
+            </h2>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };
