@@ -13,8 +13,7 @@ export function AccordionDemo() {
         collapsible
         className="xl:mx-40 md:mx-20 mx-10 my-20"
       >
-        {" "}
-        <h1 className="text-3xl font-poppinsSB py-2">FAQ's</h1>
+        <h1 className="text-3xl font-poppinsSB py-2">FAQ&apos;s</h1>
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>
