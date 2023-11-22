@@ -4,9 +4,12 @@ import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
 import Image from "next/image";
 
+import Map from "@/components/Map";
+
 import { siteConfig } from "@/config/site";
 
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import Contact from "@/components/Contact";
 
 import Date from "@/components/Date";
 import About from "@/components/About";
@@ -97,7 +100,9 @@ export default function Home() {
         <About />
         <Themes />
         <Events />
+        <Contact />
         <Organizers />
+        <Map />
       </div>
       <Footer />
     </main>
