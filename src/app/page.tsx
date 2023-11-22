@@ -104,12 +104,9 @@ export default function Home() {
         <Events />
         <Contact />
         <Organizers />
-<<<<<<< HEAD
         <Map />
-=======
         {/* <Experience /> */}
         {/* <AccordionDemo /> */}
->>>>>>> 08a74d3c6fd74ad8bc6bb198c4556e58bf58eb3e
       </div>
       <Footer />
     </main>
