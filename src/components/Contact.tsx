@@ -9,7 +9,7 @@ const AlertCard = () => {
   const alertData = [
     {
       name: "Manjunath",
-      phone: "+91 987 654 3218",
+      phone: "+91 94802 20971",
       email: "example@gmail.com",
     },
     {
@@ -40,12 +40,12 @@ const AlertCard = () => {
                   >
                     {item.phone}
                   </Link>
-                  <Link
+                  {/* <Link
                     className="hover:underline underline-offset-4"
                     href={`mailto:${item.email}`}
                   >
                     {item.email}
-                  </Link>
+                  </Link> */}
                 </AlertDescription>
               </div>
             </div>
