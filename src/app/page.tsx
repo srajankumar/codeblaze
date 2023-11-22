@@ -101,9 +101,9 @@ export default function Home() {
         </div>
         <About />
         <Themes />
-        <Events />
-        {/* <Contact /> */}
         {/* <FAQ /> */}
+        <Events />
+        <Contact />
         <Organizers />
         <Map />
         {/* <Experience /> */}
