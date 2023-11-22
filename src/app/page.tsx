@@ -18,6 +18,8 @@ import Events from "@/components/Events";
 import Footer from "@/components/Footer";
 import Organizers from "@/components/Organizers";
 import CountDown from "@/components/TextAnimation/CountDown";
+import Experience from "@/components/Flowchart/page";
+import { AccordionDemo } from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -102,7 +104,12 @@ export default function Home() {
         <Events />
         <Contact />
         <Organizers />
+<<<<<<< HEAD
         <Map />
+=======
+        {/* <Experience /> */}
+        {/* <AccordionDemo /> */}
+>>>>>>> 08a74d3c6fd74ad8bc6bb198c4556e58bf58eb3e
       </div>
       <Footer />
     </main>

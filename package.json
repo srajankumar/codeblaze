@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
     "@radix-ui/react-scroll-area": "^1.0.5",
@@ -22,6 +23,7 @@
     "react-dom": "^18",
     "react-parallax-tilt": "^1.7.172",
     "react-simple-typewriter": "^5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"
   },
