@@ -22,23 +22,12 @@ const EventCard = ({ event }) => {
         background: "transparent",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "3px solid  #232631" }}
       date={event.date}
-      iconStyle={{ background: event.iconBg }}
-      icon={
-        <div className="flex justify-center items-center w-full h-full">
-          <Image
-            src={event.icon}
-            alt={event.description}
-            height={1024}
-            width={1024}
-            className={`w-[50%] h-[80%] object-contain rounded-full bg-[${event.iconBg}]`}
-          />
-        </div>
-      }
+      iconStyle={{ background: "#800080" }}
     >
       <div className="gradient_border md:hover:scale-[102%] cursor-default transition duration-300 backdrop-blur-sm bg-[#d1f2f9] bg-opacity-5 p-10">
-        <h3 className="text-[#fffba4] text-xl md:text-[24px] font-jbExtrabold">
+        <h3 className="text-[#e782e2] text-xl md:text-[24px] font-jbExtrabold">
           {event.title}
         </h3>
         {/* <p
@@ -47,11 +36,11 @@ const EventCard = ({ event }) => {
         >
           {event.description}
         </p>{" "} */}
-        <ul className="mt-5 space-y-2">
+        <ul className="mt-2 space-y-2">
           {event.points.map((point, index) => (
             <li
               key={`event-point-${index}`}
-              className="text-secondary pb-1 text-sm md:text-[16px] font-jbRegular"
+              className="text-secondary text-white pb-1 text-sm md:text-[16px] font-jbRegular"
             >
               {point}
             </li>

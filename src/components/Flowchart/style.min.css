@@ -17,9 +17,10 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 1px;
   height: 100%;
   width: 4px;
+  margin-top: 1rem;
   background: white;
 }
 .vertical-timeline.vertical-timeline--one-column-right::before {
@@ -67,11 +68,12 @@
 .vertical-timeline-element-icon {
   position: absolute;
   top: 0;
+  margin-top: 1.1rem;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #14596b, inset 0 2px 0 #00000014, 0 3px 0 4px #0000000d;
+  box-shadow: 0 0 0 3px #eaecec, inset 0 2px 0 #00000014, 0 3px 0 4px #0000000d;
 }
 .vertical-timeline--one-column-right .vertical-timeline-element-icon {
   right: 0;
@@ -89,10 +91,11 @@
 }
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns .vertical-timeline-element-icon {
-    width: 60px;
-    height: 60px;
+    width: 20px;
+    height: 20px;
     left: 50%;
-    margin-left: -30px;
+    margin-top: 1.1rem;
+    margin-left: -10px;
   }
 }
 /* .vertical-timeline-element-icon {
