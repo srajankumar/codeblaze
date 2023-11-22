@@ -67,7 +67,8 @@ const Events = () => {
       description:
         "Dive into a high-tech adventure in this race against time to Navigate through puzzles and tackle tech-themed challenges which will present you with the key to escape the maze.",
       imageSrc: "techmaze.png",
-      register: "https://sankalp.sosc.org.in/events/tech-maze",
+      // register: "https://sankalp.sosc.org.in/events/tech-maze",
+      register: "",
       rule: "tech-maze.pdf",
       sentence: "",
       link: "",
@@ -84,7 +85,8 @@ const Events = () => {
       description:
         "Gear up to test your coding intuition. This exclusive challenge provides an opportunity to enhance precision, logical thinking, and time-management skills, all without relying on sight.",
       imageSrc: "blindb.png",
-      register: "https://sankalp.sosc.org.in/events/blind-bytes",
+      // register: "https://sankalp.sosc.org.in/events/blind-bytes",
+      register: "",
       rule: "blind-bytes.pdf",
       sentence: "",
       link: "",
@@ -101,7 +103,8 @@ const Events = () => {
       description:
         "Delve into the world of open source, contribute to projects and learn from the community. Prepare to enhance your coding skills- one pull request at a time.",
       imageSrc: "open-source.png",
-      register: "https://sankalp.sosc.org.in/events/open-source-fiesta",
+      // register: "https://sankalp.sosc.org.in/events/open-source-fiesta",
+      register: "",
       rule: "open-source-fiesta.pdf",
       sentence: "",
       link: "",
@@ -118,7 +121,8 @@ const Events = () => {
       description:
         "Step into the world of financial markets and showcase your trading skills, learn, and compete with like-minded individuals, to claim the prestigious title of 'Wolf of Dalal Street'  and exclusive prizes.",
       imageSrc: "wolf-of-dalal-street.jpg",
-      register: "https://sankalp.sosc.org.in/events/wolf-of-dalal-street",
+      // register: "https://sankalp.sosc.org.in/events/wolf-of-dalal-street",
+      register: "",
       rule: "wolf-of-dalal-street.pdf",
       sentence: "",
       link: "",
@@ -135,7 +139,8 @@ const Events = () => {
       description:
         "Unveil your groundbreaking ideas, gain exposure, and compete for a place in the future of technology and entrepreneurship in this 'Tech Startup Pitching' competition.",
       imageSrc: "pitchers.png",
-      register: "https://sankalp.sosc.org.in/events/the-pitchers",
+      // register: "https://sankalp.sosc.org.in/events/the-pitchers",
+      register: "",
       rule: "the-pitchers.pdf",
       sentence: "",
       link: "",
@@ -152,7 +157,8 @@ const Events = () => {
       description:
         "Suit up for this race to the finish line, by solving security-related challenges and capture virtual 'flags' to claim an exciting slew of prizes waiting at the finish line.",
       imageSrc: "decode.png",
-      register: "https://sankalp.sosc.org.in/events/decode",
+      // register: "https://sankalp.sosc.org.in/events/decode",
+      register: "",
       rule: "decode.pdf",
       sentence: "",
       link: "",
