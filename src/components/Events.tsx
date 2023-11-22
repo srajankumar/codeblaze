@@ -50,7 +50,7 @@ const Events = () => {
         "Join our Valorant Offline Tournament for top-tier gameplay, strategic brilliance, and the chance to win incredible prizes! Experience intense competition, unexpected comebacks, and the thrill of victory!",
       imageSrc: "firepower.png",
       register: "https://aerophilia.in/courses",
-      rule: "",
+      rule: "firepower.pdf",
       sentence:
         "The registration button will redirect to the Aerophilia website. Please register for this event there.",
       link: "",
@@ -153,7 +153,7 @@ const Events = () => {
         "Suit up for this race to the finish line, by solving security-related challenges and capture virtual 'flags' to claim an exciting slew of prizes waiting at the finish line.",
       imageSrc: "decode.png",
       register: "",
-      rule: "",
+      rule: "decode.pdf",
       sentence: "",
       link: "",
       date: "9th Dec",
