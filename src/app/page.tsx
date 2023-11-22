@@ -102,7 +102,7 @@ export default function Home() {
         <About />
         <Themes />
         <Events />
-        <Contact />
+        {/* <Contact /> */}
         <Organizers />
         <Map />
         {/* <Experience /> */}
