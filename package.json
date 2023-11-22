@@ -22,6 +22,7 @@
     "react-dom": "^18",
     "react-parallax-tilt": "^1.7.172",
     "react-simple-typewriter": "^5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"
   },
