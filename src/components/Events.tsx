@@ -49,7 +49,7 @@ const Events = () => {
       description:
         "Join our Valorant Offline Tournament for top-tier gameplay, strategic brilliance, and the chance to win incredible prizes! Experience intense competition, unexpected comebacks, and the thrill of victory!",
       imageSrc: "firepower.png",
-      register: "https://aerophilia.in/courses",
+      register: "https://aerophilia.in/events",
       rule: "firepower.pdf",
       sentence:
         "The registration button will redirect to the Aerophilia website. Please register for this event there.",
