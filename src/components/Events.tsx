@@ -145,7 +145,7 @@ const Events = () => {
       sentence: "",
       link: "",
       date: "8th Dec",
-      time: "9:30 - 10:30 AM",
+      time: "12:00 - 01:00 PM",
     },
 
     {
