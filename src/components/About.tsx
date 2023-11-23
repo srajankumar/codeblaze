@@ -36,7 +36,7 @@ const About = () => {
           all skill levels.
         </p>
       </div>
-      <div className="flex flex-wrap px-4 py-5 z-50 font-poppinsR leading-8 text-lg">
+      <div className="flex flex-wrap px-4 py-5 z-30 font-poppinsR leading-8 text-lg">
         <Link
           href="/rulebooks/hackathon.pdf"
           className="mr-5 mb-5"

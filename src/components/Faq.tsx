@@ -40,8 +40,12 @@ export default function FAQ() {
       </h1>
       {accordionData.map((item) => (
         <AccordionItem key={item.id} value={item.id}>
-          <AccordionTrigger>{item.question}</AccordionTrigger>
-          <AccordionContent>{item.answer}</AccordionContent>
+          <AccordionTrigger className="text-lg font-poppinsSB tracking-wide">
+            {item.question}
+          </AccordionTrigger>
+          <AccordionContent className="font-poppinsR">
+            {item.answer}
+          </AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>

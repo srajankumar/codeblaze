@@ -4,6 +4,8 @@ import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
 import Image from "next/image";
 
+import { Link } from "react-scroll";
+
 import Map from "@/components/Map";
 
 import { siteConfig } from "@/config/site";
@@ -18,13 +20,18 @@ import Events from "@/components/Events";
 import Footer from "@/components/Footer";
 import Organizers from "@/components/Organizers";
 import CountDown from "@/components/TextAnimation/CountDown";
-import Experience from "@/components/Flowchart/page";
+import Flow from "@/components/Flowchart";
 import FAQ from "@/components/Faq";
+import Register from "@/components/Register";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <main className="w-full">
-      <div className="flex flex-col select-none h-screen justify-center items-center">
+      <div
+        id="home"
+        className="flex flex-col select-none h-screen justify-center items-center"
+      >
         <Hero />
 
         <div className="flex md:flex-row flex-col mb-5 font-poppinsSB items-center">
@@ -85,6 +92,7 @@ export default function Home() {
         />
       </div>
 
+      {/* <Navbar /> */}
       <ScrollToTopButton />
 
       <div className="lg:px-20 md:px-10">
@@ -99,14 +107,21 @@ export default function Home() {
           )}
           <CountDown />
         </div>
-        <About />
-        <Themes />
+        <div id="about">
+          <About />
+        </div>
+        <div id="flow">{/* <Flow /> */}</div>
+        <div id="themes">
+          <Themes />
+        </div>
+        <Register />
         {/* <FAQ /> */}
-        <Events />
-        <Contact />
+        <div id="events">
+          <Events />
+        </div>
+        <div id="contact">{/* <Contact /> */}</div>
         <Organizers />
         <Map />
-        {/* <Experience /> */}
       </div>
       <Footer />
     </main>

@@ -24,10 +24,10 @@ const EventCard = ({ event }) => {
       }}
       contentArrowStyle={{ borderRight: "3px solid  #232631" }}
       date={event.date}
-      iconStyle={{ background: "#800080" }}
+      iconStyle={{ background: "#ffffff" }}
     >
-      <div className="gradient_border md:hover:scale-[102%] cursor-default transition duration-300 backdrop-blur-sm bg-[#d1f2f9] bg-opacity-5 p-10">
-        <h3 className="text-[#e782e2] text-xl md:text-[24px] font-jbExtrabold">
+      <div className="rounded-xl md:hover:scale-[102%] cursor-default transition duration-300 backdrop-blur-sm bg-[#d1f2f9] bg-opacity-5 p-10">
+        <h3 className="text-pink-400 text-xl md:text-[24px] font-poppinsSB tracking-wide">
           {event.title}
         </h3>
         {/* <p
@@ -40,7 +40,7 @@ const EventCard = ({ event }) => {
           {event.points.map((point, index) => (
             <li
               key={`event-point-${index}`}
-              className="text-secondary text-white pb-1 text-sm md:text-[16px] font-jbRegular"
+              className="text-secondary text-white pb-1 text-sm md:text-[16px] font-poppinsR"
             >
               {point}
             </li>

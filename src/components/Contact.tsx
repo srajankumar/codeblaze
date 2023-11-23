@@ -35,7 +35,7 @@ const AlertCard = () => {
                 </AlertTitle>
                 <AlertDescription className="flex tracking-wide flex-col text-base md:text-lg flex-wrap">
                   <Link
-                    className="hover:underline underline-offset-4"
+                    className="hover:underline font-poppinsR underline-offset-4"
                     href={`tel:${item.phone}`}
                   >
                     {item.phone}
