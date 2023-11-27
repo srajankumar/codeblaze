@@ -159,6 +159,19 @@ const EventCard: React.FC<EventCardProps> = ({
                           {sentence}
                         </p>
                       )}
+
+                      {title == "Firepower" && (
+                        <div className="font-poppinsR pt-3 text-base text-gray-300 leading-relaxed tracking-wide">
+                          <span className="font-poppinsSB text-white">
+                            Note:
+                          </span>{" "}
+                          Spot registrations are{" "}
+                          <span className="font-poppinsSB text-white">
+                            strictly
+                          </span>{" "}
+                          not available.
+                        </div>
+                      )}
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <AlertDialogFooter className="pb-5">
@@ -278,6 +291,17 @@ const EventCard: React.FC<EventCardProps> = ({
                       <p className="font-poppinsR pt-3 leading-relaxed tracking-wide">
                         {sentence}
                       </p>
+                    )}
+
+                    {title == "Firepower" && (
+                      <div className="font-poppinsR pt-3 text-base text-gray-300 leading-relaxed tracking-wide">
+                        <span className="font-poppinsSB text-white">Note:</span>{" "}
+                        Spot registrations are{" "}
+                        <span className="font-poppinsSB text-white">
+                          strictly
+                        </span>{" "}
+                        not available.
+                      </div>
                     )}
                   </AlertDialogDescription>
                 </AlertDialogHeader>
