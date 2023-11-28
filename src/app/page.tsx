@@ -37,11 +37,11 @@ export default function Home() {
               height={500}
               unoptimized={true}
               priority
-              className="w-12 md:w-20 pr-2"
+              className="w-12 pr-2"
               src="/sosc-trans.svg"
               alt="sosc"
             />
-            <span className="md:text-4xl text-lg">/</span>
+            <span className="md:text-2xl text-lg">/</span>
             <h1 className="md:hidden md:text-2xl text-lg pl-3">hackathon</h1>
             <div className="md:hidden md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
               <Cursor
