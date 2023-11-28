@@ -31,7 +31,7 @@ export default function Home() {
         <Hero />
 
         <div className="flex md:flex-row flex-col mb-5 font-poppinsSB items-center">
-          <div className="flex justify-center items-center w-fit md:mb-0 mb-5">
+          <div className="flex w-fit md:mb-0 mb-5">
             <Image
               width={500}
               height={500}
@@ -41,34 +41,17 @@ export default function Home() {
               src="/sosc-trans.svg"
               alt="sosc"
             />
-            <span className="md:text-2xl text-lg">/</span>
-            <h1 className="md:hidden md:text-2xl text-lg pl-3">hackathon</h1>
-            <div className="md:hidden md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
+            <span className="md:text-2xl text-lg">|</span>
+            <h1 className="md:text-2xl text-lg pl-3 mr-5">hackathon</h1>
+            {/* <div className="md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
               <Cursor
                 cursorStyle="."
                 cursorColor="#C76988"
                 cursorBlinking={true}
               />
-            </div>
+            </div> */}
           </div>
-          <div className="w-full flex justify-center px-3">
-            <Link href="/hackathon">
-              <div className="group flex w-fit rounded-full border tracking-wide px-5 py-2 transition-colors sm:bg-transparent bg-neutral-800/30 sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
-                <h2 className="md:hidden sm:text-lg font-poppinsSB">
-                  Register Now{" "}
-                  <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    -&gt;
-                  </span>
-                </h2>
-                <h2 className="hidden md:flex sm:text-lg font-poppinsSB">
-                  Register for Hackathon{" "}
-                  <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    -&gt;
-                  </span>
-                </h2>
-              </div>
-            </Link>
-          </div>
+          <RegisterButton />
         </div>
 
         <div className="absolute z-40 float1 bottom-0 py-10">
