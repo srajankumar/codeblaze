@@ -5,7 +5,7 @@ import Navbar from "@/components/hackathon/Navbar";
 import Flow from "@/components/hackathon/Flowchart";
 import Faq from "@/components/Faq";
 import Themes from "@/components/Themes";
-import Contact from "@/components/hackathon/Contact";
+import Contact from "@/components/Contact";
 import Register from "@/components/hackathon/Register";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 const page = () => {

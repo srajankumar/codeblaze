@@ -20,10 +20,10 @@ const AlertCard = () => {
   ];
 
   return (
-    <div className="my-20 mb-28 xl:mx-40 md:mx-20 mx-10">
-      <h1 className="my-5 select-none text-3xl md:text-4xl font-poppinsB py-5">
+    <div className="my-20 xl:mx-40 md:mx-20 mx-10">
+      {/* <h1 className="my-5 select-none text-3xl md:text-4xl font-poppinsB py-5">
         <TypingAnimation message="Contact" />
-      </h1>
+      </h1> */}
       <div className="flex justify-between md:flex-row flex-col items-center md:space-x-10">
         {alertData.map((item, index) => (
           <Alert key={index} className="md:w-[40rem] md:mt-0 mt-5">
@@ -35,7 +35,7 @@ const AlertCard = () => {
                 </AlertTitle>
                 <AlertDescription className="flex tracking-wide flex-col text-base md:text-lg flex-wrap">
                   <Link
-                    className="hover:underline font-poppinsR underline-offset-4"
+                    className="hover:underline tracking-wider font-poppinsR underline-offset-4"
                     href={`tel:${item.phone}`}
                   >
                     {item.phone}

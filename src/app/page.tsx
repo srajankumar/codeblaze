@@ -3,6 +3,7 @@ import RegisterButton from "@/components/RegisterButton";
 import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
 import Image from "next/image";
+import Contact from "@/components/Contact";
 
 // import { Link } from "react-scroll";
 import Link from "next/link";
@@ -83,7 +84,7 @@ export default function Home() {
           width={700}
           height={500}
           priority
-          className="absolute opacity-80 top-full pt-[42rem] left-0 "
+          className="absolute opacity-80 top-full pt-[140rem] left-0 "
           src="/assets/background/blur2.png"
           alt=""
         />
@@ -108,6 +109,7 @@ export default function Home() {
         <Themes />
         <Register />
         <FAQ />
+        <Contact />
         <Events />
         <Organizers />
         <Map />
