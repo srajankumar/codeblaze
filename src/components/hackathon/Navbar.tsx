@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
           </li>
           <li className="mr-6 cursor-pointer hover:font-bold transition">
             <Link to="faq" smooth={true} duration={500} offset={-70}>
-              FAQ's
+              FAQ&apos;s
             </Link>
           </li>
           <li className="mr-6 cursor-pointer hover:font-bold transition">
