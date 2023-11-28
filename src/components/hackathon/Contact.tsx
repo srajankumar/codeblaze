@@ -40,12 +40,6 @@ const AlertCard = () => {
                   >
                     {item.phone}
                   </Link>
-                  {/* <Link
-                    className="hover:underline underline-offset-4"
-                    href={`mailto:${item.email}`}
-                  >
-                    {item.email}
-                  </Link> */}
                 </AlertDescription>
               </div>
             </div>

@@ -18,9 +18,19 @@ const Register = () => {
         "Upon registration, a unique ID will be sent to you via the email address you provided during registration. Use this ID along with your credentials to login.",
     },
     {
-      title: "Register for Events",
+      title: "Register for Hackathon",
       description:
-        "Once logged in, you'll be redirected to the dashboard. From there, proceed to register for all the Exciting Events!",
+        "Once logged in, you'll be redirected to the dashboard. From there, proceed to register for the Hackathon!",
+    },
+    {
+      title: "QR Code",
+      description:
+        "Upon successful registration for the Hackathon, you will receive a confirmation email containing a QR code. Please ensure to bring this email with the attached QR code to the event venue, as it will serve as your admission pass. Presenting the QR code during the event will facilitate a smooth check-in process. Thank you, and we look forward to your participation!",
+    },
+    {
+      title: "Events Registrations",
+      description:
+        "Also, Explore the exciting events listed on the platform and register for those that interest you. Make sure not to miss out on any cool opportunities! :)",
     },
   ];
 

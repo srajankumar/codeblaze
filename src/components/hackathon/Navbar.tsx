@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import Linkk from "next/link";
 import Image from "next/image";
 
 const Navbar: React.FC = () => {
@@ -24,33 +25,38 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed select-none z-50 mt-3 top-0 left-0 hidden md:flex justify-center w-full items-center py-4 md:px-10 lg:px-20 transition-opacity duration-300 ${
+      className={`fixed select-none z-50 mt-3 top-0 left-0 hidden md:flex justify-center w-full items-center py-4 md:px-10 transition-opacity duration-300 ${
         isNavVisible ? "opacity-100" : "opacity-0 hidden"
       }`}
     >
       <div className="container flex justify-between items-center rounded-full bg-background/70 border-[1px] font-poppinsR py-4 backdrop-blur-sm">
-        <Link to="home" smooth={true}>
+        <Linkk href="/">
           <Image src="/icon.svg" width={50} height={50} alt="codeblaze" />
-        </Link>
+        </Linkk>
         <ul className="flex tracking-wider justify-end">
           <li className="mr-6 cursor-pointer hover:font-bold transition">
             <Link to="about" smooth={true} duration={500} offset={-130}>
               About
             </Link>
           </li>
-          <li className="mr-6 cursor-pointer hover:font-bold transition">
+          {/* <li className="mr-6 cursor-pointer hover:font-bold transition">
             <Link to="flow" smooth={true} duration={500}>
               Flow
             </Link>
-          </li>
+          </li> */}
           <li className="mr-6 cursor-pointer hover:font-bold transition">
             <Link to="themes" smooth={true} duration={500} offset={-50}>
               Themes
             </Link>
           </li>
           <li className="mr-6 cursor-pointer hover:font-bold transition">
-            <Link to="events" smooth={true} duration={500} offset={-70}>
-              Other Events
+            <Link to="process" smooth={true} duration={500} offset={-50}>
+              Registration
+            </Link>
+          </li>
+          <li className="mr-6 cursor-pointer hover:font-bold transition">
+            <Link to="faq" smooth={true} duration={500} offset={-70}>
+              FAQ's
             </Link>
           </li>
           <li className="mr-6 cursor-pointer hover:font-bold transition">

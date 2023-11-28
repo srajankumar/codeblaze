@@ -4,14 +4,13 @@ import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
 import Image from "next/image";
 
-import { Link } from "react-scroll";
-
+// import { Link } from "react-scroll";
+import Link from "next/link";
 import Map from "@/components/Map";
 
 import { siteConfig } from "@/config/site";
 
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import Contact from "@/components/Contact";
 
 import Date from "@/components/Date";
 import About from "@/components/About";
@@ -20,10 +19,7 @@ import Events from "@/components/Events";
 import Footer from "@/components/Footer";
 import Organizers from "@/components/Organizers";
 import CountDown from "@/components/TextAnimation/CountDown";
-import Flow from "@/components/Flowchart";
-import FAQ from "@/components/Faq";
 import Register from "@/components/Register";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
@@ -35,19 +31,19 @@ export default function Home() {
         <Hero />
 
         <div className="flex md:flex-row flex-col mb-5 font-poppinsSB items-center">
-          <div className="flex w-fit md:mb-0 mb-5">
+          <div className="flex justify-center items-center w-fit md:mb-0 mb-5">
             <Image
               width={500}
               height={500}
               unoptimized={true}
               priority
-              className="w-12 pr-2"
+              className="w-12 md:w-20 pr-2"
               src="/sosc-trans.svg"
               alt="sosc"
             />
-            <span className="md:text-2xl text-lg">|</span>
-            <h1 className="md:text-2xl text-lg pl-3">hackathon</h1>
-            <div className="md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
+            <span className="md:text-4xl text-lg">/</span>
+            <h1 className="md:hidden md:text-2xl text-lg pl-3">hackathon</h1>
+            <div className="md:hidden md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
               <Cursor
                 cursorStyle="."
                 cursorColor="#C76988"
@@ -55,7 +51,24 @@ export default function Home() {
               />
             </div>
           </div>
-          <RegisterButton />
+          <div className="w-full flex justify-center px-3">
+            <Link href="/hackathon">
+              <div className="group flex w-fit rounded-full border tracking-wide px-5 py-2 transition-colors sm:bg-transparent bg-neutral-800/30 sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
+                <h2 className="md:hidden sm:text-lg font-poppinsSB">
+                  Register Now{" "}
+                  <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+                <h2 className="hidden md:flex sm:text-lg font-poppinsSB">
+                  Register for Hackathon{" "}
+                  <span className="inline-block text-pink-400 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+                  </span>
+                </h2>
+              </div>
+            </Link>
+          </div>
         </div>
 
         <div className="absolute z-40 float1 bottom-0 py-10">
@@ -107,19 +120,10 @@ export default function Home() {
           )}
           <CountDown />
         </div>
-        <div id="about">
-          <About />
-        </div>
-        <div id="flow">{/* <Flow /> */}</div>
-        <div id="themes">
-          <Themes />
-        </div>
+        <About />
+        <Themes />
         <Register />
-        {/* <FAQ /> */}
-        <div id="events">
-          <Events />
-        </div>
-        <div id="contact">{/* <Contact /> */}</div>
+        <Events />
         <Organizers />
         <Map />
       </div>

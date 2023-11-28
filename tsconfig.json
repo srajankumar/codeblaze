@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/Flowchart/index.jsx"
+    "src/components/hackathon/Flowchart/index.jsx"
   ],
   "exclude": ["node_modules"]
 }
