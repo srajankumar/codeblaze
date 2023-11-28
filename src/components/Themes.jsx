@@ -8,7 +8,7 @@ export default function Themes() {
   return (
     <div className="py-20 md:mb-10 px-2 md:px-0">
       <h1 className="px-4 text-3xl md:text-4xl font-poppinsB py-10">
-        <TypingAnimation message="Hackathon Themes" />
+        <TypingAnimation message="Themes" />
       </h1>
       <div className="px-4 grid md:grid-cols-2 gap-10">
         <Card img="company.png" theme="Company Specific" />

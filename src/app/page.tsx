@@ -20,6 +20,7 @@ import Footer from "@/components/Footer";
 import Organizers from "@/components/Organizers";
 import CountDown from "@/components/TextAnimation/CountDown";
 import Register from "@/components/Register";
+import FAQ from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -106,6 +107,7 @@ export default function Home() {
         <About />
         <Themes />
         <Register />
+        <FAQ />
         <Events />
         <Organizers />
         <Map />

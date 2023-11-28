@@ -37,7 +37,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex flex-wrap px-4 py-5 z-30 font-poppinsR leading-8 text-lg">
-        {/* <Link
+        <Link
           href="/rulebooks/hackathon.pdf"
           className="mr-5 mb-5"
           target="_blank"
@@ -50,7 +50,7 @@ const About = () => {
               </span>
             </h2>
           </div>
-        </Link> */}
+        </Link>
         <Link href="/rulebooks/rulebook.pdf" target="_blank">
           <div className="group flex w-fit rounded-full border tracking-wide px-5 py-2 transition-colors sm:bg-transparent bg-neutral-800/30 sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
             <h2 className="sm:text-lg text-sm font-poppinsSB">
