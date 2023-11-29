@@ -3,7 +3,7 @@ import RegisterButton from "@/components/RegisterButton";
 import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
 import Image from "next/image";
-import Contact from "@/components/Contact";
+import Contact from "@/components/hackathon/Contact";
 
 // import { Link } from "react-scroll";
 import Link from "next/link";
@@ -21,7 +21,7 @@ import Footer from "@/components/Footer";
 import Organizers from "@/components/Organizers";
 import CountDown from "@/components/TextAnimation/CountDown";
 import Register from "@/components/Register";
-import FAQ from "@/components/Faq";
+import FAQ from "@/components/hackathon/Faq";
 
 export default function Home() {
   return (
@@ -108,8 +108,6 @@ export default function Home() {
         <About />
         <Themes />
         <Register />
-        <FAQ />
-        <Contact />
         <Events />
         <Organizers />
         <Map />

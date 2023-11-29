@@ -1,13 +1,14 @@
 import Footer from "@/components/Footer";
-import About from "@/components/About";
+import About from "@/components/hackathon/About";
 import Hero from "@/components/hackathon/Hero";
 import Navbar from "@/components/hackathon/Navbar";
 import Flow from "@/components/hackathon/Flowchart";
-import Faq from "@/components/Faq";
-import Themes from "@/components/Themes";
-import Contact from "@/components/Contact";
+import Faq from "@/components/hackathon/Faq";
+import Themes from "@/components/hackathon/Themes";
+import Contact from "@/components/hackathon/Contact";
 import Register from "@/components/hackathon/Register";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+
 const page = () => {
   return (
     <main>

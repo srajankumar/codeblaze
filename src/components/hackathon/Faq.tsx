@@ -55,7 +55,7 @@ const accordionData = [
 
 export default function FAQ() {
   return (
-    <div className="mb-20 flex md:mb-32 flex-col justify-center px-2 md:px-0">
+    <div className="mb-20 md:pt-20 flex md:mb-32 flex-col justify-center px-2 md:px-0">
       <Accordion className="px-5" type="single" collapsible>
         <h1 className="select-none text-3xl md:text-4xl font-poppinsB py-5">
           <TypingAnimation message="FAQ's" />

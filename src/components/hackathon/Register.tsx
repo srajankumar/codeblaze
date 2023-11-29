@@ -36,7 +36,7 @@ const Register = () => {
 
   return (
     <div>
-      <div className="py-20 md:mb-10 xl:mx-40 md:mx-20 mx-6 my-12 mb-20">
+      <div className="md:pt-20 md:mb-10 xl:mx-40 md:mx-20 mx-6 my-12 mb-20">
         <h1 className="text-3xl md:text-4xl font-poppinsB pb-10">
           <TypingAnimation message="Registration Process" />
         </h1>

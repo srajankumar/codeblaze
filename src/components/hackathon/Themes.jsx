@@ -21,11 +21,23 @@ export default function Themes() {
 function Card({ theme, img }) {
   return (
     <div className="relative overflow-hidden rounded-3xl border-2 border-neutral-700 hover:border-[#6D76A3] group aspect-video">
+      {theme == "Company Specific" && (
+        <div className="absolute text-transparent px-10 flex justify-center items-center font-poppinsR hover:text-white w-full h-full bg-transparent transition-all duration-300 hover:bg-black/50 hover:backdrop-blur-md z-50">
+          Problem statements funded by companies aim to address real-world
+          challenges faced by the sponsoring companies. Typically, these problem
+          statements are harder.
+        </div>
+      )}
+      {theme == "Open Theme" && (
+        <div className="absolute text-transparent px-10 flex justify-center items-center font-poppinsR hover:text-white w-full h-full bg-transparent transition-all duration-300 hover:bg-black/50 hover:backdrop-blur-md z-50">
+          Participants define open-themed problem statements by themselves,
+          aiming to address current societal issues and real-world problems.
+        </div>
+      )}
       <div className="absolute inset-0 z-10 bg-zinc-950/70 transition-colors group-hover:bg-zinc-950/75" />
       <Image
         src={`/assets/themes/${img}`}
-        // src={`/og.png`}
-        alt=""
+        alt={theme}
         fill
         className="object-cover w-full h-full transition-all duration-500 ease-in-out transform group-hover:scale-110"
       />
