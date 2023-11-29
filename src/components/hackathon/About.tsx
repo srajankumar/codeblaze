@@ -23,7 +23,7 @@ const About = () => {
           </span>{" "}
           hacking session. The projects are evaluated in three phases: Design
           and Planning, Progress and Unity, and Presentation and Pitch. The
-          judges evaluate the project's approach, overall idea, business
+          judges evaluate the project&apos;s approach, overall idea, business
           criteria, efficiency, speed, user experience, soft skills, production
           cost, difficulty level, and workforce. The final presentation is in
           offline mode, with the panel of judges. to turn your innovative ideas
