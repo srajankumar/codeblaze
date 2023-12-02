@@ -17,9 +17,9 @@ const page = () => {
         <div id="about">
           <About />
         </div>
-        {/* <div id="flow">
+        <div id="flow">
           <Flow />
-        </div> */}
+        </div>
         <div id="themes">
           <Themes />
         </div>

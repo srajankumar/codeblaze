@@ -21,12 +21,9 @@ const AlertCard = () => {
 
   return (
     <div className="my-20 xl:mx-40 md:mx-20 mx-10">
-      {/* <h1 className="my-5 select-none text-3xl md:text-4xl font-poppinsB py-5">
-        <TypingAnimation message="Contact" />
-      </h1> */}
       <div className="flex justify-between md:flex-row flex-col items-center md:space-x-10">
         {alertData.map((item, index) => (
-          <Alert key={index} className="md:w-[40rem] md:mt-0 mt-5">
+          <Alert key={index} className="md:w-[40rem] md:mt-0 mt-5 bg-black/30">
             <div className="flex w-full">
               <Terminal className="h-6 w-6 mt-1 mr-3" />
               <div>

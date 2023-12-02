@@ -11,23 +11,16 @@ const About = () => {
       </h1>
       <div className="px-4 font-poppinsR leading-8 space-y-5 text-lg">
         <p>
-          The hackathon involves participants presenting their projects to a
-          panel of judges. The problem statements are either company-funded or
-          open-themed, participants to present their unique ideas. Mentors are
-          available to help beginners navigate the process. Workshops on tech
-          stacks, such as backend, frontend, APIs, and Git, are conducted to
-          help beginners. The hackathon begins with an introductory session,
-          followed by a{" "}
+          Hackathon: Participants present projects to judges, with
+          company-funded or open-themed problem statements. Workshops cover tech
+          stacks. Event includes intro,{" "}
           <span className="grad font-poppinsB text-xl tracking-wide">
             20-hour
           </span>{" "}
-          hacking session. The projects are evaluated in three phases: Design
-          and Planning, Progress and Unity, and Presentation and Pitch. The
-          judges evaluate the project&apos;s approach, overall idea, business
-          criteria, efficiency, speed, user experience, soft skills, production
-          cost, difficulty level, and workforce. The final presentation is in
-          offline mode, with the panel of judges. to turn your innovative ideas
-          into reality, with themes suitable for all skill levels.
+          hack, and three-phase evaluation: Design, Progress, Presentation.
+          Judges assess approach, idea, business criteria, efficiency, speed,
+          user experience, soft skills, cost, difficulty, and workforce. Final
+          presentation is offline. Themes suit all skill levels.
         </p>
       </div>
       <div className="flex flex-wrap px-4 py-5 z-30 font-poppinsR leading-8 text-lg">

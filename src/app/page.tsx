@@ -106,7 +106,7 @@ export default function Home() {
           <CountDown />
         </div>
         <About />
-        <Themes />
+        {/* <Themes /> */}
         <Register />
         <Events />
         <Organizers />

@@ -1,54 +1,63 @@
 const events = [
   {
-    title: "Entered SOSC",
+    title: "🚀 Registration Opens",
     description: "",
     icon: `/assets/flowchart/registration.png`,
     iconBg: "#0f0913",
-    date: "17th October",
-    points: [
-      "Secure your spot at the most exhilarating tech event of Hacktober Fest to unleash your coding potential and work on some amazing projects!",
-    ],
+    date: "18th November",
+    points: ["Secure your spot at sankalp.sosc.org.in"],
   },
   {
-    title: "Registration Deadline",
+    title: "⏰ Registration Deadline",
     description: "",
     icon: `/assets/flowchart/deadline.png`,
     iconBg: "#0f0913",
-    date: "28th October",
-    points: ["Form your teams and gear up for D-day!"],
+    date: "",
+    points: ["Limited to the first 80 teams"],
   },
   {
-    title: "Hackathon Kick-off",
-    description: "",
-    icon: `/assets/flowchart/start.png`,
-    iconBg: "#0f0913",
-    date: "28th October - 11:00 a.m",
-    points: [
-      "Choose your fighter: pick a theme/track and start building on your concept!",
-      "You'll have a 24-hour window to transform your concept into a prototype.",
-    ],
-  },
-  {
-    title: "Hackathon Ends",
+    title: "🌐 Introduction",
     description: "",
     icon: `/assets/flowchart/end.png`,
     iconBg: "#0f0913",
-    date: "29 October - 11:00 a.m",
+    date: "08 December - 01:30 p.m",
+    points: ["Gather, Instructions, and Announcements"],
+  },
+  {
+    title: "🔥 Hackathon Kick-off",
+    description: "",
+    icon: `/assets/flowchart/start.png`,
+    iconBg: "#0f0913",
+    date: "08 December - 02:00 p.m",
     points: [
-      "Time's up!",
-      "Bid farewell to your coding marathons as the hackathon comes to a close. It's time to prepare for project presentations and the final showdown!",
+      "Embark on a 20-hour journey to transform your concept into a prototype",
     ],
   },
   {
-    title: "Announcement of Results",
+    title: "🏆 Phase 1 Evaluation",
     description: "",
     icon: `/assets/flowchart/trophy.png`,
     iconBg: "#0f0913",
-    date: "11th November",
-    points: [
-      "The moment of truth!",
-      "Get ready for the much-anticipated announcement of hackathon winners. Your hard work and innovation will be recognized, and prizes will be awarded.",
-    ],
+    date: "08 December - 11:00 p.m",
+    points: ["Design, Planning, and Progress"],
+  },
+
+  {
+    title: "💡 Phase 2 - Idea Submission",
+    description: "",
+    icon: `/assets/flowchart/trophy.png`,
+    iconBg: "#0f0913",
+    date: "09 December - 09:00 a.m",
+    points: [""],
+  },
+
+  {
+    title: "⌛ Phase 2 Deadline",
+    description: "",
+    icon: `/assets/flowchart/trophy.png`,
+    iconBg: "#0f0913",
+    date: "09 December - 11:00 a.m",
+    points: ["Hackathon Ends; Phase 3 Presentation Begins"],
   },
 ];
 

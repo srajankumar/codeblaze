@@ -75,7 +75,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 0 5px #ffffff, inset 0 2px 0 #00000014, 0 3px 0 4px #0000000d;
+  box-shadow: 0 0 0 5px #ffffff, inset 0 2px 0 #ffffff, 0 3px 0 4px #0000000d;
 }
 .vertical-timeline--one-column-right .vertical-timeline-element-icon {
   right: 0;
