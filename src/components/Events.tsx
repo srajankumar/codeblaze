@@ -88,8 +88,8 @@ const Events = () => {
       rule: "blind-bytes.pdf",
       sentence: "",
       link: "",
-      date: "8th Dec",
-      time: "02:45 - 04:00 PM",
+      date: "9th Dec",
+      time: "10:00 - 03:00 PM",
     },
 
     {
