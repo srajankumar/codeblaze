@@ -84,7 +84,7 @@ export default function Home() {
           width={700}
           height={500}
           priority
-          className="absolute opacity-80 top-full pt-[140rem] left-0 "
+          className="absolute opacity-80 top-full pt-[90rem] left-0 "
           src="/assets/background/blur2.png"
           alt=""
         />

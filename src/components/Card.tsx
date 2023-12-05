@@ -70,7 +70,7 @@ const EventCard: React.FC<EventCardProps> = ({
   const renderOrganizers = () => {
     if (coordinator_name) {
       return (
-        <div className="font-poppinsSB text-base text-violet-400 pt-3 tracking-wide mb-3">
+        <div className="font-poppinsSB text-base text-violet-400 pt-3 tracking-wide mb-3 z-50">
           {collab_name ? <p>Organizers</p> : <p>Organizer</p>}
           <div className="font-poppinsR pt-2">
             {coordinator_name},{" "}
