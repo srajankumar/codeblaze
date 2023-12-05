@@ -31,7 +31,7 @@ const Events = () => {
               height={500}
               width={500}
               src="/assets/logo/ieee.png"
-              className="w-60 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
+              className="md:w-60 w-40 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
               alt="ieee"
             />
           </Link>
@@ -49,7 +49,7 @@ const Events = () => {
               height={500}
               width={500}
               src="/assets/logo/sulthan.png"
-              className="w-60 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
+              className="md:w-60 w-52 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
               alt="sulthan"
             />
           </Link>
