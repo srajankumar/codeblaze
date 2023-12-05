@@ -23,9 +23,9 @@ const page = () => {
         <div id="themes">
           <Themes />
         </div>
-        <div id="process">
+        {/* <div id="process">
           <Register />
-        </div>
+        </div> */}
         <div id="faq">
           <Faq />
         </div>

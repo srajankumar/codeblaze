@@ -44,7 +44,7 @@ export default function Home() {
               alt="sosc"
             />
             <span className="md:text-2xl text-lg">|</span>
-            <h1 className="md:text-2xl text-lg pl-3 mr-5">hackathon</h1>
+            <h1 className="md:text-2xl text-lg pl-3">hackathon</h1>
             {/* <div className="md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
               <Cursor
                 cursorStyle="."
@@ -53,7 +53,20 @@ export default function Home() {
               />
             </div> */}
           </div>
-          <RegisterButton />
+          {/* <RegisterButton /> */}
+        </div>
+
+        <div className="md:mt-0 -mt-5 flex justify-center items-center flex-col">
+          <p className="font-poppinsR">Powered by</p>
+          <Image
+            width={500}
+            height={500}
+            unoptimized={true}
+            priority
+            className="w-44"
+            src="/assets/logo/sulthan.png"
+            alt="sosc"
+          />
         </div>
 
         <div className="absolute z-40 float1 bottom-0 py-10">

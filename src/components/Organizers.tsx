@@ -6,14 +6,14 @@ import Image from "next/image";
 const Events = () => {
   return (
     <div>
-      <div className="md:px-20 my-10 py-5 md:py-10 mb-20 px-10 lg:px-32">
-        <div className="flex space-x-10 sm:space-x-20 md:space-x-32 justify-center items-center">
+      <div className="md:pb-10 mb-20 px-10">
+        <div className="flex justify-center items-center flex-wrap">
           <Link href={siteConfig.scem} target="_blank">
             <Image
               height={500}
               width={500}
               src="/assets/logo/sahyadri.png"
-              className="md:w-40 w-32 hover:scale-105 transition duration-300 hover:-rotate-3"
+              className="md:w-40 w-32 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
               alt="sahyadri"
             />
           </Link>
@@ -22,8 +22,35 @@ const Events = () => {
               height={500}
               width={500}
               src="/assets/logo/sosc.png"
-              className="md:w-40 w-32 hover:scale-105 transition duration-300 hover:rotate-3"
+              className="md:w-40 w-32 mt-16 mx-10 hover:scale-105 transition duration-300 hover:rotate-3"
               alt="sosc"
+            />
+          </Link>
+          <Link href="https://ieee-mangalore.org/" target="_blank">
+            <Image
+              height={500}
+              width={500}
+              src="/assets/logo/ieee.png"
+              className="w-60 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
+              alt="ieee"
+            />
+          </Link>
+          <Link href="https://www.wolframalpha.com/" target="_blank">
+            <Image
+              height={500}
+              width={500}
+              src="/assets/logo/wolfram.svg"
+              className="w-60 mt-16 mx-10 hover:scale-105 transition duration-300 hover:rotate-3"
+              alt="wolfram"
+            />
+          </Link>
+          <Link href="https://sulthandiamondsandgold.com" target="_blank">
+            <Image
+              height={500}
+              width={500}
+              src="/assets/logo/sulthan.png"
+              className="w-60 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
+              alt="sulthan"
             />
           </Link>
         </div>

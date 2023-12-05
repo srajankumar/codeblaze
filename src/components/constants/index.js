@@ -12,15 +12,15 @@ const events = [
     description: "",
     icon: `/assets/flowchart/deadline.png`,
     iconBg: "#0f0913",
-    date: "",
-    points: ["Limited to the first 80 teams"],
+    date: "05th December",
+    points: ["Limited to the first 90 teams"],
   },
   {
     title: "🌐 Introduction",
     description: "",
     icon: `/assets/flowchart/end.png`,
     iconBg: "#0f0913",
-    date: "08 December - 01:30 p.m",
+    date: "08th December - 01:30 p.m",
     points: ["Gather, Instructions, and Announcements"],
   },
   {
@@ -28,7 +28,7 @@ const events = [
     description: "",
     icon: `/assets/flowchart/start.png`,
     iconBg: "#0f0913",
-    date: "08 December - 02:00 p.m",
+    date: "08th December - 02:00 p.m",
     points: [
       "Embark on a 20-hour journey to transform your concept into a prototype",
     ],
@@ -38,7 +38,7 @@ const events = [
     description: "",
     icon: `/assets/flowchart/trophy.png`,
     iconBg: "#0f0913",
-    date: "08 December - 11:00 p.m",
+    date: "08th December - 11:00 p.m",
     points: ["Design, Planning, and Progress"],
   },
 
@@ -47,7 +47,7 @@ const events = [
     description: "",
     icon: `/assets/flowchart/trophy.png`,
     iconBg: "#0f0913",
-    date: "09 December - 09:00 a.m",
+    date: "09th December - 09:00 a.m",
     points: [""],
   },
 
@@ -56,7 +56,7 @@ const events = [
     description: "",
     icon: `/assets/flowchart/trophy.png`,
     iconBg: "#0f0913",
-    date: "09 December - 11:00 a.m",
+    date: "09th December - 11:00 a.m",
     points: ["Hackathon Ends; Phase 3 Presentation Begins"],
   },
 ];
