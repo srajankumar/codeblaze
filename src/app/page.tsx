@@ -4,7 +4,12 @@ import TextRunner from "@/components/TextRunner";
 import { Cursor } from "react-simple-typewriter";
 import Image from "next/image";
 import Contact from "@/components/hackathon/Contact";
-
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Info } from "lucide-react";
 // import { Link } from "react-scroll";
 import Link from "next/link";
 import Map from "@/components/Map";
@@ -63,7 +68,7 @@ export default function Home() {
             height={500}
             unoptimized={true}
             priority
-            className="w-44 mr-5 md:w-52 md:mb-3 mb-2"
+            className="w-44 mr-5 md:w-52 mb-2"
             src="/assets/logo/sulthan.png"
             alt="sosc"
           />
@@ -83,8 +88,21 @@ export default function Home() {
             />
           </svg>
         </div>
-
-        <RegisterButton />
+        <div className="flex">
+          <RegisterButton />
+          <Popover>
+            <PopoverTrigger className="hover:text-violet-400 transition duration-300">
+              <Info />
+            </PopoverTrigger>
+            <PopoverContent className="mr-[3.7rem] mt-5 md:mt-0">
+              <p className="mb-3 font-poppinsR">
+                Registration slots for the hackathon are currently filled. Don't
+                miss out on the opportunity to participate! Join the waiting
+                list now to secure a chance in case we have any vacancies.
+              </p>
+            </PopoverContent>
+          </Popover>
+        </div>
         <Image
           width={700}
           height={500}
