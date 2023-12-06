@@ -63,7 +63,7 @@ export default function Home() {
             height={500}
             unoptimized={true}
             priority
-            className="w-44"
+            className="w-44 mr-5 md:w-52 md:mb-3 mb-2"
             src="/assets/logo/sulthan.png"
             alt="sosc"
           />

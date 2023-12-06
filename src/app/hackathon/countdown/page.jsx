@@ -16,7 +16,7 @@ const Timer = () => {
 
   useEffect(() => {
     const currentTimeInSeconds = getCurrentTimeInSeconds();
-    const countdownEnd = 13 * 3600 + 0 * 60; // 12:30 in seconds
+    const countdownEnd = 13 * 3600 + 5 * 60; // 12:30 in seconds
     const countupEnd = countdownEnd + 5 * 60; // 10 minutes in seconds
 
     if (currentTimeInSeconds < countdownEnd) {
