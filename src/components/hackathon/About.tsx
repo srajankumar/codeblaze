@@ -39,7 +39,7 @@ const About = () => {
           </div>
         </Link>
         <Link
-          href="https://forms.gle/Sdefet49u8pXukCR6"
+          href="https://forms.gle/UgwANGXoiQA6ugMD8"
           className="mr-5 mb-5"
           target="_blank"
         >

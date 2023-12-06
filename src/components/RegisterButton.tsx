@@ -4,7 +4,7 @@ import Link from "next/link";
 const RegisterButton = () => {
   return siteConfig.register ? (
     <div className="w-full flex justify-center px-3">
-      <Link href="https://forms.gle/Sdefet49u8pXukCR6" target="_blank">
+      <Link href="https://forms.gle/UgwANGXoiQA6ugMD8" target="_blank">
         <div className="group flex w-fit rounded-full border tracking-wide px-5 py-2 transition-colors sm:bg-transparent bg-neutral-800/30 sm:hover:border-neutral-700 border-neutral-700 hover:bg-neutral-800/30">
           <h2 className="sm:text-lg font-poppinsSB">
             Join waiting list{" "}
