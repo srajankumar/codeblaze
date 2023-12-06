@@ -28,7 +28,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/hackathon/Flowchart/index.jsx",
-    "src/app/hackathon/countdown/page.jsx"
+    "src/app/hackathon/countdown/page.tsx"
   ],
   "exclude": ["node_modules"]
 }
