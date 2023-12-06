@@ -12,7 +12,7 @@ const events = [
     description: "",
     icon: `/assets/flowchart/deadline.png`,
     iconBg: "#0f0913",
-    date: "05th December",
+    date: "",
     points: ["Limited to the first 90 teams"],
   },
   {

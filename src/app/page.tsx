@@ -84,7 +84,7 @@ export default function Home() {
           </svg>
         </div>
 
-        {/* <RegisterButton /> */}
+        <RegisterButton />
         <Image
           width={700}
           height={500}
