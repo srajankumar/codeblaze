@@ -2,15 +2,35 @@
 import React, { useState, useEffect } from "react";
 
 const Timer = () => {
-  const initialSeconds = parseInt(localStorage.getItem("timerSeconds")) || 30;
-  const initialCountingDown =
-    localStorage.getItem("timerCountingDown") === "true" || true;
+  const getCurrentTimeInSeconds = () => {
+    const currentTime = new Date();
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    return hours * 3600 + minutes * 60 + seconds;
+  };
 
-  const [seconds, setSeconds] = useState(initialSeconds);
-  const [countingDown, setCountingDown] = useState(initialCountingDown);
+  const [seconds, setSeconds] = useState(0);
+  const [countingDown, setCountingDown] = useState(true);
   const [timerStopped, setTimerStopped] = useState(false);
 
   useEffect(() => {
+    const currentTimeInSeconds = getCurrentTimeInSeconds();
+    const countdownEnd = 13 * 3600 + 0 * 60; // 12:30 in seconds
+    const countupEnd = countdownEnd + 5 * 60; // 10 minutes in seconds
+
+    if (currentTimeInSeconds < countdownEnd) {
+      // Countdown logic
+      setSeconds(countdownEnd - currentTimeInSeconds);
+    } else if (currentTimeInSeconds < countupEnd) {
+      // Count up logic
+      setCountingDown(false);
+      setSeconds(currentTimeInSeconds - countdownEnd);
+    } else {
+      // Timer has stopped
+      setTimerStopped(true);
+    }
+
     const intervalId = setInterval(() => {
       if (countingDown) {
         // Countdown logic
@@ -21,8 +41,8 @@ const Timer = () => {
         }
       } else {
         // Count up logic
-        if (seconds < 120) {
-          // 24 hours in seconds
+        if (seconds < 300) {
+          // 10 minutes in seconds
           setSeconds((prevSeconds) => prevSeconds + 1);
         } else {
           setTimerStopped(true);
@@ -31,12 +51,6 @@ const Timer = () => {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [seconds, countingDown]);
-
-  useEffect(() => {
-    // Save state to localStorage
-    localStorage.setItem("timerSeconds", seconds.toString());
-    localStorage.setItem("timerCountingDown", countingDown.toString());
   }, [seconds, countingDown]);
 
   const formatTime = (timeInSeconds) => {
@@ -52,9 +66,6 @@ const Timer = () => {
   return (
     <div>
       <h1>{formatTime(seconds)}</h1>
-      {seconds === 160 && (
-        <p>This is a custom message displayed at 160 seconds!</p>
-      )}
       <p>{countingDown ? "Counting Down" : "Counting Up"}</p>
       {timerStopped && <p>The timer has stopped!</p>}
     </div>
