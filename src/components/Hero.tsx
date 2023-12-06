@@ -3,9 +3,9 @@ import TypingAnimation from "./TextAnimation/TextType";
 
 const Hero = () => {
   return (
-    <div className="">
-      <div className="flex w-fit md:mb-0">
-        <h1 className="px-4 flex items-end text-6xl select-none md:text-9xl sm:text-8xl font-poppinsSB py-5">
+    <div>
+      <div className="flex w-fit">
+        <h1 className="px-4 flex items-end text-6xl select-none md:text-9xl sm:text-8xl font-poppinsSB md:py-3 py-2">
           <Image
             width={500}
             height={500}

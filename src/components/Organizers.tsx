@@ -6,7 +6,7 @@ import Image from "next/image";
 const Events = () => {
   return (
     <div>
-      <div className="md:pb-10 mb-20 px-10">
+      <div className="pb-10 mb-20 px-10">
         <div className="flex justify-center items-center flex-wrap">
           <Link href={siteConfig.scem} target="_blank">
             <Image
@@ -49,7 +49,7 @@ const Events = () => {
               height={500}
               width={500}
               src="/assets/logo/sulthan.png"
-              className="md:w-60 w-52 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
+              className="md:w-64 w-52 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
               alt="sulthan"
             />
           </Link>

@@ -1,83 +1,9 @@
-// "use client";
-// import React, { useState, useEffect } from "react";
-
-// const Timer = () => {
-//   const getCurrentTimeInSeconds = () => {
-//     const currentTime = new Date();
-//     const hours = currentTime.getHours();
-//     const minutes = currentTime.getMinutes();
-//     const seconds = currentTime.getSeconds();
-//     return hours * 3600 + minutes * 60 + seconds;
-//   };
-
-//   const [seconds, setSeconds] = useState(0);
-//   const [countingDown, setCountingDown] = useState(true);
-//   const [timerStopped, setTimerStopped] = useState(false);
-
-//   useEffect(() => {
-//     const currentTimeInSeconds = getCurrentTimeInSeconds();
-//     const countdownEnd = 13 * 3600 + 25 * 60; // 12:30 in seconds
-//     const countupEnd = countdownEnd + 5 * 60; // 10 minutes in seconds
-
-//     if (currentTimeInSeconds < countdownEnd) {
-//       // Countdown logic
-//       setSeconds(countdownEnd - currentTimeInSeconds);
-//     } else if (currentTimeInSeconds < countupEnd) {
-//       // Count up logic
-//       setCountingDown(false);
-//       setSeconds(currentTimeInSeconds - countdownEnd);
-//     } else {
-//       // Timer has stopped
-//       setTimerStopped(true);
-//     }
-
-//     const intervalId = setInterval(() => {
-//       if (countingDown) {
-//         // Countdown logic
-//         if (seconds > 0) {
-//           setSeconds((prevSeconds) => prevSeconds - 1);
-//         } else {
-//           setCountingDown(false);
-//         }
-//       } else {
-//         // Count up logic
-//         if (seconds < 300) {
-//           // 10 minutes in seconds
-//           setSeconds((prevSeconds) => prevSeconds + 1);
-//         } else {
-//           setTimerStopped(true);
-//         }
-//       }
-//     }, 1000);
-
-//     return () => clearInterval(intervalId);
-//   }, [seconds, countingDown]);
-
-//   const formatTime = (timeInSeconds) => {
-//     const hours = Math.floor(timeInSeconds / 3600);
-//     const minutes = Math.floor((timeInSeconds % 3600) / 60);
-//     const seconds = timeInSeconds % 60;
-
-//     return `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${
-//       seconds < 10 ? "0" : ""
-//     }${seconds}`;
-//   };
-
-//   return (
-//     <div>
-//       <h1>{formatTime(seconds)}</h1>
-//       <p>{countingDown ? "Counting Down" : "Counting Up"}</p>
-//       {timerStopped && <p>The timer has stopped!</p>}
-//     </div>
-//   );
-// };
-
-// export default Timer;
 "use client";
-import React, { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
-const Timer = () => {
+import Confetti from "react-confetti";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+const Countdown = () => {
   const getCurrentTimeInSeconds = () => {
     const currentTime = new Date();
     const hours = currentTime.getHours();
@@ -86,61 +12,102 @@ const Timer = () => {
     return hours * 3600 + minutes * 60 + seconds;
   };
 
-  const [seconds, setSeconds] = useState(0);
+  const DAY = 24 * 60 * 60; // seconds in a day
+  const HOUR = 60 * 60; // seconds in an hour
+  const MINUTE = 60; // seconds in a minute
+
+  const [remaining, setRemaining] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
   const [countingDown, setCountingDown] = useState(true);
   const [timerStopped, setTimerStopped] = useState(false);
 
   useEffect(() => {
+    const countdownEnd = 21 * HOUR + 24 * MINUTE; // 12:30 in seconds
+    const countupEnd = countdownEnd + 24 * HOUR; // 24 hours in seconds
+
     const currentTimeInSeconds = getCurrentTimeInSeconds();
-    const countdownEnd = 16 * 3600 + 6 * 60; // 13:25 in seconds
-    const countupEnd = countdownEnd + 1 * 60; // 5 minutes in seconds
 
     if (currentTimeInSeconds < countdownEnd) {
       // Countdown logic
-      setSeconds(countdownEnd - currentTimeInSeconds);
+      setRemaining({
+        days: Math.floor((countdownEnd - currentTimeInSeconds) / DAY),
+        hours: Math.floor(((countdownEnd - currentTimeInSeconds) % DAY) / HOUR),
+        minutes: Math.floor(
+          ((countdownEnd - currentTimeInSeconds) % HOUR) / MINUTE
+        ),
+        seconds: Math.floor((countdownEnd - currentTimeInSeconds) % MINUTE),
+      });
     } else if (currentTimeInSeconds < countupEnd) {
       // Count up logic
+      setRemaining({
+        days: 0,
+        hours: Math.floor((currentTimeInSeconds - countdownEnd) / HOUR),
+        minutes: Math.floor(
+          ((currentTimeInSeconds - countdownEnd) % HOUR) / MINUTE
+        ),
+        seconds: Math.floor((currentTimeInSeconds - countdownEnd) % MINUTE),
+      });
       setCountingDown(false);
-      setSeconds(Math.max(currentTimeInSeconds - countdownEnd, 0));
     } else {
       // Timer has stopped
+      setRemaining({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      });
       setTimerStopped(true);
     }
 
     const intervalId = setInterval(() => {
-      if (countingDown) {
+      const currentTimeInSeconds = getCurrentTimeInSeconds();
+
+      if (currentTimeInSeconds < countdownEnd) {
         // Countdown logic
-        if (seconds > 0) {
-          setSeconds((prevSeconds) => prevSeconds - 1);
-        } else {
-          setCountingDown(false);
-        }
-      } else {
+        setRemaining({
+          days: Math.floor((countdownEnd - currentTimeInSeconds) / DAY),
+          hours: Math.floor(
+            ((countdownEnd - currentTimeInSeconds) % DAY) / HOUR
+          ),
+          minutes: Math.floor(
+            ((countdownEnd - currentTimeInSeconds) % HOUR) / MINUTE
+          ),
+          seconds: Math.floor((countdownEnd - currentTimeInSeconds) % MINUTE),
+        });
+      } else if (currentTimeInSeconds < countupEnd) {
         // Count up logic
-        if (seconds < 60) {
-          // 5 minutes in seconds
-          setSeconds((prevSeconds) => prevSeconds + 1);
-        } else {
-          setTimerStopped(true);
-        }
+        setRemaining({
+          days: 0,
+          hours: Math.floor((currentTimeInSeconds - countdownEnd) / HOUR),
+          minutes: Math.floor(
+            ((currentTimeInSeconds - countdownEnd) % HOUR) / MINUTE
+          ),
+          seconds: Math.floor((currentTimeInSeconds - countdownEnd) % MINUTE),
+        });
+        setCountingDown(false);
+      } else {
+        // Timer has stopped
+        setRemaining({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
+        setTimerStopped(true);
+        clearInterval(intervalId);
       }
-    }, 1000); // Set interval to 1000 milliseconds (1 second)
+    }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [seconds, countingDown]);
-
-  const formatTime = (timeInSeconds: number) => {
-    const hours = Math.floor(timeInSeconds / 3600);
-    const minutes = Math.floor((timeInSeconds % 3600) / 60);
-    const seconds = timeInSeconds % 60;
-
-    return `${hours}:${minutes < 10 ? "0" : ""}${minutes}:${
-      seconds < 10 ? "0" : ""
-    }${seconds}`;
-  };
+  }, []);
 
   return (
-    <div className="p-4 space-y-3">
+    <div className="p-4 space-y-3 h-screen flex flex-col justify-center items-center">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -148,18 +115,49 @@ const Timer = () => {
         transition={{ duration: 0.5 }}
         className="text-center"
       >
-        {/* Your text or component goes here */}
+        {/* You can add your TextRunner component here */}
       </motion.div>
-      <div className="w-full font-poppinsR max-w-5xl mx-auto flex items-center">
-        {/* Updated CountdownItem component */}
-        <CountdownItem num={Math.floor(seconds / 86400)} text="days" />
-        <CountdownItem
-          num={Math.floor((seconds % 86400) / 3600)}
-          text="hours"
+      {countingDown ? (
+        ""
+      ) : (
+        <Confetti
+          width={window.innerWidth - 10}
+          height={window.innerHeight - 10}
+          recycle={false}
         />
-        <CountdownItem num={Math.floor((seconds % 3600) / 60)} text="minutes" />
-        <CountdownItem num={seconds % 60} text="seconds" />
-      </div>
+      )}
+      {!timerStopped && (
+        <div
+          className={`${
+            remaining.hours >= 20 ? "text-red-400" : "text-violet-400"
+          } w-full font-poppinsR max-w-5xl mx-auto flex items-center`}
+        >
+          <CountdownItem num={remaining.days} text="days" />
+          <CountdownItem num={remaining.hours} text="hours" />
+          <CountdownItem num={remaining.minutes} text="minutes" />
+          <CountdownItem num={remaining.seconds} text="seconds" />
+        </div>
+      )}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+        className="text-center absolute"
+      >
+        {remaining.seconds > 45 && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className="mt-5 text-5xl select-none tracking-wide font-poppinsSB"
+          >
+            20 Hours has passed!
+          </motion.div>
+        )}
+      </motion.div>
+
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -167,25 +165,34 @@ const Timer = () => {
         transition={{ duration: 0.5 }}
         className="text-center"
       >
-        {/* Your text or component goes here */}
+        {timerStopped && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className="md:text-8xl sm:text-7xl text-5xl select-none tracking-wide font-poppinsSB"
+          >
+            Times Up<span className="text-pink-400">!</span>
+          </motion.div>
+        )}
       </motion.div>
     </div>
   );
 };
 
-// CountdownItem component updated for the new structure
 const CountdownItem = ({ num, text }: { num: number; text: string }) => {
   return (
     <div className="w-1/4 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center">
       <div className="w-full text-center relative overflow-hidden">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout">
           <motion.span
             key={num}
             initial={{ y: "100%" }}
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-3xl sm:text-4xl md:text-5xl font-poppinsSB lg:text-6xl text-violet-400 font-medium"
+            className="block text-3xl sm:text-4xl md:text-5xl font-poppinsSB lg:text-6xl font-medium"
           >
             {num}
           </motion.span>
@@ -198,4 +205,4 @@ const CountdownItem = ({ num, text }: { num: number; text: string }) => {
   );
 };
 
-export default Timer;
+export default Countdown;

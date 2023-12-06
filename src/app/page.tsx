@@ -61,14 +61,14 @@ export default function Home() {
           {/* <RegisterButton /> */}
         </div>
 
-        <div className="md:mt-0 -mt-5 flex justify-center items-center flex-col">
+        <div className="md:mt-0 mb-6 -mt-5 flex justify-center items-center flex-col">
           <p className="font-poppinsR">Powered by</p>
           <Image
             width={500}
             height={500}
             unoptimized={true}
             priority
-            className="w-44 mr-5 md:w-52 mb-2"
+            className="w-44 mr-2 md:w-52 mb-2"
             src="/assets/logo/sulthan.png"
             alt="sosc"
           />

@@ -46,7 +46,11 @@ const CountDown = () => {
   };
 
   return (
-    <div className="p-4 space-y-3">
+    <div
+      className={`p-4 space-y-3 ${
+        remaining.seconds <= 10 ? "text-red-400" : "text-violet-400"
+      }`}
+    >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -91,7 +95,7 @@ const CountdownItem = ({ num, text }: { num: number; text: string }) => {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-3xl sm:text-4xl md:text-5xl font-poppinsSB lg:text-6xl text-violet-400 font-medium"
+            className="block text-3xl sm:text-4xl md:text-5xl font-poppinsSB lg:text-6xl font-medium"
           >
             {num}
           </motion.span>
