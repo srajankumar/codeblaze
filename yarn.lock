@@ -2621,6 +2621,11 @@ source-map-js@^1.0.2:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
+storage@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/storage/-/storage-0.2.0.tgz#b978d8fda47a0accbcc10bf3944fdce308f1d355"
+  integrity sha512-JslWQU/kNJE/rBfTdlAlZo6r1m5biRszJFqU6W/x5FzUuSHSiCaDXolzwSwvUJOLShHWCjTfeTwuznEGZYlU6Q==
+
 streamsearch@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
@@ -2883,6 +2888,11 @@ undici-types@~5.26.4:
   version "5.26.5"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
+
+universal@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/universal/-/universal-0.1.1.tgz#5a2fcf9db6eace8598c305b4c785094b8e72a11f"
+  integrity sha512-62YQgSRVLdtAzsWz4KqEU6HH3ByOEOiNSyOar9z0ApHR8WUHiFh08+jT0N0HHAHcwJgRn6XbD4ay3Am1m3zchw==
 
 update-browserslist-db@^1.0.13:
   version "1.0.13"
