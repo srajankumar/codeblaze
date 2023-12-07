@@ -96,9 +96,10 @@ export default function Home() {
             </PopoverTrigger>
             <PopoverContent className="mr-[3.7rem] mt-5 md:mt-0">
               <p className="mb-3 font-poppinsR">
-                Registration slots for the hackathon are currently filled. Don't
-                miss out on the opportunity to participate! Join the waiting
-                list now to secure a chance in case we have any vacancies.
+                Registration slots for the hackathon are currently filled.
+                Don&apos;t miss out on the opportunity to participate! Join the
+                waiting list now to secure a chance in case we have any
+                vacancies.
               </p>
             </PopoverContent>
           </Popover>

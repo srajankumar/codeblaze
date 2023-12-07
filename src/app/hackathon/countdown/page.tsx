@@ -27,8 +27,8 @@ const Countdown = () => {
   const [timerStopped, setTimerStopped] = useState(false);
 
   useEffect(() => {
-    const countdownEnd = 21 * HOUR + 24 * MINUTE; // 12:30 in seconds
-    const countupEnd = countdownEnd + 24 * HOUR; // 24 hours in seconds
+    const countdownEnd = 10 * HOUR + 0 * MINUTE; // 12:30 in seconds
+    const countupEnd = countdownEnd + 10 * MINUTE; // 24 hours in seconds
 
     const currentTimeInSeconds = getCurrentTimeInSeconds();
 
@@ -129,7 +129,7 @@ const Countdown = () => {
       {!timerStopped && (
         <div
           className={`${
-            remaining.hours >= 20 ? "text-red-400" : "text-violet-400"
+            remaining.minutes <= 5 ? "text-red-400" : "text-violet-400"
           } w-full font-poppinsR max-w-5xl mx-auto flex items-center`}
         >
           <CountdownItem num={remaining.days} text="days" />
@@ -143,17 +143,17 @@ const Countdown = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5 }}
-        className="text-center absolute"
+        className="text-center w-full h-[90%] flex justify-center items-center absolute"
       >
-        {remaining.seconds > 45 && (
+        {remaining.minutes <= 5 && remaining.seconds <= 5 && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="mt-5 text-5xl select-none tracking-wide font-poppinsSB"
+            className="lg:text-7xl md:text-5xl text-4xl py-10 px-20 rounded-full border-[2px] border-gray-400/20 bg-black/40 backdrop-blur-lg select-none tracking-wide font-poppinsSB"
           >
-            20 Hours has passed!
+            20 Hours has passed<span className="text-pink-400">!</span>
           </motion.div>
         )}
       </motion.div>
@@ -192,13 +192,13 @@ const CountdownItem = ({ num, text }: { num: number; text: string }) => {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-3xl sm:text-4xl md:text-5xl font-poppinsSB lg:text-6xl font-medium"
+            className="block font-poppinsSB md:text-7xl text-5xl lg:text-8xl font-medium"
           >
             {num}
           </motion.span>
         </AnimatePresence>
       </div>
-      <span className="text-xs md:text-sm lg:text-base font-light text-violet-400">
+      <span className="text-xs md:text-sm lg:text-base font-poppinsSB tracking-wide text-white">
         {text}
       </span>
     </div>
