@@ -27,7 +27,7 @@ const Countdown = () => {
   const [timerStopped, setTimerStopped] = useState(false);
 
   useEffect(() => {
-    const countdownEnd = 10 * HOUR + 0 * MINUTE; // 12:30 in seconds
+    const countdownEnd = 9 * HOUR + 0 * MINUTE; // 12:30 in seconds
     const countupEnd = countdownEnd + 10 * MINUTE; // 24 hours in seconds
 
     const currentTimeInSeconds = getCurrentTimeInSeconds();
