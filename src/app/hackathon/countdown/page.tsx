@@ -27,8 +27,8 @@ const Countdown = () => {
   const [timerStopped, setTimerStopped] = useState(false);
 
   useEffect(() => {
-    const countdownEnd = 9 * HOUR + 0 * MINUTE; // 12:30 in seconds
-    const countupEnd = countdownEnd + 10 * MINUTE; // 24 hours in seconds
+    const countdownEnd = 14 * HOUR + 0 * MINUTE; // 12:30 in seconds
+    const countupEnd = countdownEnd + 24 * HOUR; // 24 hours in seconds
 
     const currentTimeInSeconds = getCurrentTimeInSeconds();
 
@@ -108,15 +108,6 @@ const Countdown = () => {
 
   return (
     <div className="p-4 space-y-3 h-screen flex flex-col justify-center items-center">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.5 }}
-        className="text-center"
-      >
-        {/* You can add your TextRunner component here */}
-      </motion.div>
       {countingDown ? (
         ""
       ) : (
@@ -124,12 +115,14 @@ const Countdown = () => {
           width={window.innerWidth - 10}
           height={window.innerHeight - 10}
           recycle={false}
+          numberOfPieces={1000}
+          initialVelocityX={-10}
         />
       )}
       {!timerStopped && (
         <div
           className={`${
-            remaining.minutes <= 5 ? "text-red-400" : "text-violet-400"
+            remaining.hours >= 20 ? "text-red-400" : "text-violet-400"
           } w-full font-poppinsR max-w-5xl mx-auto flex items-center`}
         >
           <CountdownItem num={remaining.days} text="days" />
@@ -145,17 +138,19 @@ const Countdown = () => {
         transition={{ duration: 0.5 }}
         className="text-center w-full h-[90%] flex justify-center items-center absolute"
       >
-        {remaining.minutes <= 5 && remaining.seconds <= 5 && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
-            className="lg:text-7xl md:text-5xl text-4xl py-10 px-20 rounded-full border-[2px] border-gray-400/20 bg-black/40 backdrop-blur-lg select-none tracking-wide font-poppinsSB"
-          >
-            20 Hours has passed<span className="text-pink-400">!</span>
-          </motion.div>
-        )}
+        {remaining.hours == 20 &&
+          remaining.minutes == 0 &&
+          remaining.seconds <= 5 && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+              className="lg:text-7xl md:text-5xl text-4xl py-10 px-20 rounded-full border-[2px] border-gray-400/20 bg-black/40 backdrop-blur-lg select-none tracking-wide font-poppinsSB"
+            >
+              20 Hours has passed<span className="text-pink-400">!</span>
+            </motion.div>
+          )}
       </motion.div>
 
       <motion.div
