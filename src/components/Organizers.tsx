@@ -30,7 +30,7 @@ const Events = () => {
             <Image
               height={500}
               width={500}
-              src="/assets/logo/ieee.png"
+              src="/assets/logo/ieee-student.png"
               className="md:w-60 w-40 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
               alt="ieee"
             />
