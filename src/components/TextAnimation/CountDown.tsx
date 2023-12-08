@@ -47,9 +47,10 @@ const CountDown = () => {
 
   return (
     <div
-      className={`p-4 space-y-3 ${
-        remaining.seconds <= 10 ? "text-red-400" : "text-violet-400"
-      }`}
+      // className={`p-4 space-y-3 ${
+      //   remaining.seconds <= 10 ? "text-red-400" : "text-violet-400"
+      // }`}
+      className="p-4 space-y-3"
     >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -62,12 +63,6 @@ const CountDown = () => {
           <TextRunner />
         </div> */}
       </motion.div>
-      <div className="w-full font-poppinsR max-w-5xl mx-auto flex items-center">
-        <CountdownItem num={remaining.days} text="days" />
-        <CountdownItem num={remaining.hours} text="hours" />
-        <CountdownItem num={remaining.minutes} text="minutes" />
-        <CountdownItem num={remaining.seconds} text="seconds" />
-      </div>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -75,7 +70,19 @@ const CountDown = () => {
         transition={{ duration: 0.5 }}
         className="text-center"
       >
-        <div className="md:text-3xl select-none text-xl tracking-wide sm:text-2xl font-poppinsSB">
+        <div className="md:text-4xl select-none sm:text-3xl text-2xl tracking-wide font-poppinsSB">
+          See y'all in the Campus!
+          <Cursor cursorStyle="." cursorColor="#C76988" cursorBlinking={true} />
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+        className="text-center"
+      >
+        <div className="md:text-3xl text-violet-400 select-none text-xl tracking-wide sm:text-2xl font-poppinsSB">
           On 8th and 9th Dec
           <Cursor cursorStyle="." cursorColor="#C76988" cursorBlinking={true} />
         </div>
