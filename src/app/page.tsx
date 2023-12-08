@@ -88,7 +88,7 @@ export default function Home() {
             />
           </svg>
         </div>
-        {/* <div className="flex">
+        <div className="flex">
           <RegisterButton />
           <Popover>
             <PopoverTrigger className="hover:text-violet-400 transition duration-300">
@@ -103,7 +103,7 @@ export default function Home() {
               </p>
             </PopoverContent>
           </Popover>
-        </div> */}
+        </div>
         <Image
           width={700}
           height={500}
