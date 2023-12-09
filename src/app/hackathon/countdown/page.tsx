@@ -1,18 +1,10 @@
 "use client";
+import { Cursor } from "react-simple-typewriter";
 
 import Confetti from "react-confetti";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const Countdown = () => {
-  const getCurrentTimeInSeconds = () => {
-    const currentTime = new Date();
-    const hours = currentTime.getHours();
-    const minutes = currentTime.getMinutes();
-    const seconds = currentTime.getSeconds();
-    return hours * 3600 + minutes * 60 + seconds;
-  };
-
-  const DAY = 24 * 60 * 60; // seconds in a day
   const HOUR = 60 * 60; // seconds in an hour
   const MINUTE = 60; // seconds in a minute
 
@@ -23,73 +15,27 @@ const Countdown = () => {
     seconds: 0,
   });
 
-  const [countingDown, setCountingDown] = useState(true);
   const [timerStopped, setTimerStopped] = useState(false);
 
   useEffect(() => {
-    const countdownEnd = 6 * HOUR + 0 * MINUTE; // 12:30 in seconds
-    const countupEnd = countdownEnd + 7 * HOUR; // 24 hours in seconds
+    const startTime = 7 * HOUR + 0 * MINUTE; // 7:00 AM in seconds
+    const stopTime = 11 * HOUR + 0 * MINUTE; // 2:00 PM in seconds
 
-    const currentTimeInSeconds = getCurrentTimeInSeconds();
-
-    if (currentTimeInSeconds < countdownEnd) {
-      // Countdown logic
-      setRemaining({
-        days: Math.floor((countdownEnd - currentTimeInSeconds) / DAY),
-        hours: Math.floor(((countdownEnd - currentTimeInSeconds) % DAY) / HOUR),
-        minutes: Math.floor(
-          ((countdownEnd - currentTimeInSeconds) % HOUR) / MINUTE
-        ),
-        seconds: Math.floor((countdownEnd - currentTimeInSeconds) % MINUTE),
-      });
-    } else if (currentTimeInSeconds < countupEnd) {
-      // Count up logic
-      setRemaining({
-        days: 0,
-        hours: Math.floor((currentTimeInSeconds - countdownEnd) / HOUR),
-        minutes: Math.floor(
-          ((currentTimeInSeconds - countdownEnd) % HOUR) / MINUTE
-        ),
-        seconds: Math.floor((currentTimeInSeconds - countdownEnd) % MINUTE),
-      });
-      setCountingDown(false);
-    } else {
-      // Timer has stopped
-      setRemaining({
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-      });
-      setTimerStopped(true);
-    }
-
-    const intervalId = setInterval(() => {
+    const updateRemainingTime = () => {
       const currentTimeInSeconds = getCurrentTimeInSeconds();
 
-      if (currentTimeInSeconds < countdownEnd) {
+      if (currentTimeInSeconds < stopTime) {
         // Countdown logic
         setRemaining({
-          days: Math.floor((countdownEnd - currentTimeInSeconds) / DAY),
+          days: Math.floor((stopTime - currentTimeInSeconds) / (24 * HOUR)),
           hours: Math.floor(
-            ((countdownEnd - currentTimeInSeconds) % DAY) / HOUR
+            ((stopTime - currentTimeInSeconds) % (24 * HOUR)) / HOUR
           ),
           minutes: Math.floor(
-            ((countdownEnd - currentTimeInSeconds) % HOUR) / MINUTE
+            ((stopTime - currentTimeInSeconds) % HOUR) / MINUTE
           ),
-          seconds: Math.floor((countdownEnd - currentTimeInSeconds) % MINUTE),
+          seconds: Math.floor((stopTime - currentTimeInSeconds) % MINUTE),
         });
-      } else if (currentTimeInSeconds < countupEnd) {
-        // Count up logic
-        setRemaining({
-          days: 0,
-          hours: Math.floor((currentTimeInSeconds - countdownEnd) / HOUR),
-          minutes: Math.floor(
-            ((currentTimeInSeconds - countdownEnd) % HOUR) / MINUTE
-          ),
-          seconds: Math.floor((currentTimeInSeconds - countdownEnd) % MINUTE),
-        });
-        setCountingDown(false);
       } else {
         // Timer has stopped
         setRemaining({
@@ -99,26 +45,26 @@ const Countdown = () => {
           seconds: 0,
         });
         setTimerStopped(true);
-        clearInterval(intervalId);
       }
-    }, 1000);
+    };
+
+    updateRemainingTime(); // Initial call to set the remaining time
+
+    const intervalId = setInterval(updateRemainingTime, 1000);
 
     return () => clearInterval(intervalId);
   }, []);
 
+  const getCurrentTimeInSeconds = () => {
+    const currentTime = new Date();
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    return hours * HOUR + minutes * MINUTE + seconds;
+  };
+
   return (
     <div className="p-4 space-y-3 h-screen flex flex-col justify-center items-center">
-      {countingDown ? (
-        ""
-      ) : (
-        <Confetti
-          width={window.innerWidth - 10}
-          height={window.innerHeight - 10}
-          recycle={false}
-          numberOfPieces={1000}
-          initialVelocityX={-10}
-        />
-      )}
       {!timerStopped && (
         <div
           className={`${
@@ -136,28 +82,6 @@ const Countdown = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5 }}
-        className="text-center w-full h-[90%] flex justify-center items-center absolute"
-      >
-        {remaining.hours == 20 &&
-          remaining.minutes == 0 &&
-          remaining.seconds <= 5 && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="lg:text-7xl md:text-5xl text-4xl py-10 px-20 rounded-full border-[2px] border-gray-400/20 bg-black/40 backdrop-blur-lg select-none tracking-wide font-poppinsSB"
-            >
-              20 Hours has passed<span className="text-pink-400">!</span>
-            </motion.div>
-          )}
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.5 }}
         className="text-center"
       >
         {timerStopped && (
@@ -168,7 +92,12 @@ const Countdown = () => {
             transition={{ duration: 0.5 }}
             className="md:text-8xl sm:text-7xl text-5xl select-none tracking-wide font-poppinsSB"
           >
-            Times Up<span className="text-pink-400">!</span>
+            Hackathon Ended
+            <Cursor
+              cursorStyle="!"
+              cursorColor="#C76988"
+              cursorBlinking={true}
+            />
           </motion.div>
         )}
       </motion.div>
