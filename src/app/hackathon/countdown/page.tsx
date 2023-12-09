@@ -19,7 +19,7 @@ const Countdown = () => {
 
   useEffect(() => {
     const startTime = 7 * HOUR + 0 * MINUTE; // 7:00 AM in seconds
-    const stopTime = 11 * HOUR + 0 * MINUTE; // 2:00 PM in seconds
+    const stopTime = 14 * HOUR + 0 * MINUTE; // 2:00 PM in seconds
 
     const updateRemainingTime = () => {
       const currentTimeInSeconds = getCurrentTimeInSeconds();
