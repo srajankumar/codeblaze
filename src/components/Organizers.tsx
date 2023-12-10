@@ -53,15 +53,24 @@ const Events = () => {
               alt="sulthan"
             />
           </Link>
-          <Link href="https://www.wolframalpha.com/" target="_blank">
+          <Link href="https://cs-clouds.netlify.app/" target="_blank">
             <Image
               height={500}
               width={500}
               src="/assets/logo/clouds-scem.png"
               className="md:w-40 w-32 mt-16 mx-10 hover:scale-105 transition duration-300 hover:rotate-3"
-              alt="wolfram"
+              alt="clouds"
             />
           </Link>
+          {/* <Link href="" target="_blank"> */}
+          <Image
+            height={500}
+            width={500}
+            src="/assets/logo/minds-scem.png"
+            className="md:w-40 w-32 mt-16 mx-10 hover:scale-105 transition duration-300 hover:-rotate-3"
+            alt="minds"
+          />
+          {/* </Link> */}
         </div>
       </div>
     </div>
