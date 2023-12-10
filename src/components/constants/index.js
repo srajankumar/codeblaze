@@ -43,7 +43,7 @@ const events = [
   },
 
   {
-    title: "💡 Phase 2 - Idea Submission",
+    title: "💡 Idea Submission",
     description: "",
     icon: `/assets/flowchart/trophy.png`,
     iconBg: "#0f0913",
@@ -52,12 +52,12 @@ const events = [
   },
 
   {
-    title: "⌛ Phase 2 Deadline",
+    title: "⌛ Phase 2",
     description: "",
     icon: `/assets/flowchart/trophy.png`,
     iconBg: "#0f0913",
     date: "09th December - 11:00 a.m",
-    points: ["Hackathon Ends; Phase 3 Presentation Begins"],
+    points: ["Hackathon Ends, Presentation Begins"],
   },
 ];
 

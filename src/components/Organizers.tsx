@@ -53,6 +53,15 @@ const Events = () => {
               alt="sulthan"
             />
           </Link>
+          <Link href="https://www.wolframalpha.com/" target="_blank">
+            <Image
+              height={500}
+              width={500}
+              src="/assets/logo/clouds-scem.png"
+              className="md:w-40 w-32 mt-16 mx-10 hover:scale-105 transition duration-300 hover:rotate-3"
+              alt="wolfram"
+            />
+          </Link>
         </div>
       </div>
     </div>
