@@ -14,7 +14,7 @@ import { Info } from "lucide-react";
 import Link from "next/link";
 import Map from "@/components/Map";
 
-import YouTubeVideo from "@/components/YoutubeVideo";
+import YouTubeVideo from "@/components/YouTubeVideo";
 
 import { siteConfig } from "@/config/site";
 
