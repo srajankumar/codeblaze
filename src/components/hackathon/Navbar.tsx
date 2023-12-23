@@ -39,11 +39,11 @@ const Navbar: React.FC = () => {
               About
             </Link>
           </li>
-          {/* <li className="mr-6 cursor-pointer hover:font-bold transition">
+          <li className="mr-6 cursor-pointer hover:font-bold transition">
             <Link to="flow" smooth={true} duration={500}>
               Flow
             </Link>
-          </li> */}
+          </li>
           <li className="mr-6 cursor-pointer hover:font-bold transition">
             <Link to="themes" smooth={true} duration={500} offset={-50}>
               Themes

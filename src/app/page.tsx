@@ -10,7 +10,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Info } from "lucide-react";
-// import { Link } from "react-scroll";
 import Link from "next/link";
 import Map from "@/components/Map";
 
@@ -39,7 +38,7 @@ export default function Home() {
       >
         <Hero />
 
-        <div className="flex md:flex-row flex-col mb-5 font-poppinsSB items-center">
+        {/* <div className="flex md:flex-row flex-col mb-2 font-poppinsSB items-center">
           <div className="flex w-fit md:mb-0 mb-5">
             <Image
               width={500}
@@ -52,25 +51,25 @@ export default function Home() {
             />
             <span className="md:text-2xl text-lg">|</span>
             <h1 className="md:text-2xl text-lg pl-3">hackathon</h1>
-            {/* <div className="md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
+            <div className="md:text-3xl select-none pr-0.5 md:pr-5 text-xl sm:text-2xl font-poppinsSB">
               <Cursor
                 cursorStyle="."
                 cursorColor="#C76988"
                 cursorBlinking={true}
               />
-            </div> */}
+            </div>
           </div>
-          {/* <RegisterButton /> */}
-        </div>
+          <RegisterButton />
+        </div> */}
 
-        <div className="md:mt-0 mb-6 -mt-5 flex justify-center items-center flex-col">
-          <p className="font-poppinsR">Powered by</p>
+        <div className="mb-6 mt-3 flex justify-center items-center flex-col">
+          <p className="md:text-base text-sm font-poppinsR">Powered by</p>
           <Image
             width={500}
             height={500}
             unoptimized={true}
             priority
-            className="w-44 mr-2 md:w-52 mb-2"
+            className="w-40 mr-2 md:w-52"
             src="/assets/logo/sulthan.png"
             alt="sosc"
           />

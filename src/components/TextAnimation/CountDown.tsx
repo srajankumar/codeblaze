@@ -71,7 +71,7 @@ const CountDown = () => {
         className="text-center"
       >
         <div className="md:text-4xl select-none sm:text-3xl text-2xl tracking-wide font-poppinsSB">
-          See y&apos;all in the Campus
+          Hackathon Ended
           <Cursor cursorStyle="!" cursorColor="#C76988" cursorBlinking={true} />
         </div>
       </motion.div>
