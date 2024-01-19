@@ -144,9 +144,9 @@ export default function Home() {
         <Events />
         <Organizers />
         <Map />
-        <div className="md:mt-40 md:mb-0 mt-20 mb-10 mx-5">
+{/*         <div className="md:mt-40 md:mb-0 mt-20 mb-10 mx-5">
           <YouTubeVideo videoId="pHlOFgRUQVQ" height={450} />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </main>
